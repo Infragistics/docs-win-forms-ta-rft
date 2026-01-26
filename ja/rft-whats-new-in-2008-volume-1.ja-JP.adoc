@@ -1,0 +1,37 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2008-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "{2FBF7BFE-6518-49A9-8760-1AD1D5679AB9}",  
+    "buildFlags": [],
+    "createdOn": "2008-11-07T12:05:46Z"
+}
+|metadata|
+////
+
+= 2008 Volume 1 の新機能
+
+{ProductName} (Rational Functional Tester) 2008 Volume 1 リリースでは、以下の Ultimate UI for Windows Forms コントロールおよびコンポーネントのサポートが改善されています。
+
+== WinTrackBar
+
+* 新しい WinTackBar コントロールは、{ProductName} (Rational Functional Tester) により、記録、再生、確認ポイントを含めサポートされます。
+
+== [Close] ボタンが、WinTab、WinTabStrip、WinTabbedMDI でサポートされます。
+
+* 追加された記録および再生アクションは、WinTab コントロール、WinTabStrip コントロールおよび WinTabbedMDI コントロールで、Close ボタン機能による操作をサポートします。
+
+== WinListView
+
+* AutoFitColumns プロパティのサポートが追加されました。これによりWinListView コントロールは、割り当てられたスペースにすべての列が収まるように、列のサイズを自動的に設定できます。新しく AutoResizeColumn アクションが WinListView プロキシに追加されます。
+
+== WinTree
+
+* WinTree の新しい複数レベルノード選択が WinTree プロキシによりサポートされます。
+
+== SetNAProperty (すべてのコントロール)
+
+* 新しく SetNAProperty アクションがすべてのコントロール プロキシに追加され、すべての Ultimate UI for Windows Forms コントロールで特定のプロパティの値を設定できます。

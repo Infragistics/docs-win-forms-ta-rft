@@ -1,0 +1,39 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2009-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "{E4BC9CC8-CACA-47F7-8808-05DC555474C1}",  
+    "buildFlags": [],
+    "createdOn": "2009-05-03T11:04:21Z"
+}
+|metadata|
+////
+
+= 2009 Volume 1 の新機能
+
+{ProductName} (Rational Functional Tester) 2009 Volume 1 リリースでは、以下の Ultimate UI for Windows Forms コントロールのサポートが改善されています。
+
+== WinGrid
+
+* WinGrid のExcel フィルタリング機能のサポートが追加されました。
+* WinGrid 列ヘッダーにチェックボックスを追加する機能を提供する新機能のサポートが追加されています。
+* RowLayout のグループに対するサポートが追加されました。
+
+== WinSchedule
+
+* 予定のドラッグ操作に対するサポートが追加されました。また、機能拡張も追加されています。
+
+== WinCombo
+
+* 多数の項目を選択できる WinCombo コントロールの新機能のサポートが追加されました。
+
+== WinComboEditor
+
+* 複数の項目を選択できる WinComboEditor コントロールの新機能のサポートが追加されました。
+
+== WinPanel
+
+* 新しい WinPanel コントロールのサポートが追加されました。

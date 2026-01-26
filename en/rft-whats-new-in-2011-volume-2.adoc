@@ -1,0 +1,29 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2011-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "6809f186-e1ae-4635-8a47-8ec3b4d1ca7c",  
+    "buildFlags": [],
+    "createdOn": "2011-11-16T20:26:49.740027Z"
+}
+|metadata|
+////
+
+= What's New in 2011 Volume 2
+
+*WinGrid – Support for Automated Testing of the Re-Styled Conditional Formatting Dialog*
+
+The {ProductName} (Rational Functional Tester) 2011.2 release includes automated testing support for the re-styled conditional formatting dialog feature of the WinGrid™ control.
+
+The conditional formatting dialog has been restyled to provide users with a more intuitive user interface (UI). It consists of an UltraGrid™ control and each row of the UltraGrid displays a single condition type. The condition types are defined using the controls available in each row of the Grid. There are no new proxies as this feature uses our existing controls such as UltraGrid, UltraTab™, UltraButtons™, UltraFormattedLinkLabel™, and UltraCombo™. You can add verification points to the UltraGrid control, as well as the individual controls.
+
+*CLR4 Compatibility*
+
+With the 2011 Volume 2 release, CLR4 compatible builds of our proxies can be used with applications referencing our Infragistics CLR4 assemblies.
+
+*Version Utility*
+
+The version utility is updated to display VersionFree, CLR2, and CLR4 versions in the drop-down menu. Now you have the ability to switch to any build version of our assemblies. (You could previously switch to the CLR2 version only.).

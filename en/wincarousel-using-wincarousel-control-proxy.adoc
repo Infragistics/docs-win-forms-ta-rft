@@ -1,0 +1,257 @@
+﻿////
+
+|metadata|
+{
+    "name": "wincarousel-using-wincarousel-control-proxy",
+    "controlName": [],
+    "tags": [],
+    "guid": "6ab02b44-13bd-433e-a515-c14b361ad5d8",  
+    "buildFlags": [],
+    "createdOn": "2014-10-01T16:39:58.3729574Z"
+}
+|metadata|
+////
+
+= Using WinCarousel Control Proxy
+
+=== Purpose
+
+This topic explains about the SubItems, different verification points, and behavior of the  _WinCarousel_™ control proxy represented by link:infragistics.rft.nettestobjects~infragistics.rft.nettestobjects.ultracarouseltestobject.html[UltraCarouselTestObject] object.
+
+=== In this topic
+
+This topic contains the following sections:
+
+* <<_Ref384651958,SubItems>>
+
+** <<_Ref399770670,Identifying carousel items>>
+** <<_Ref384651973,Button subitem>>
+** <<_Ref384651981,Text subitem>>
+** <<_Ref384651988,Name subitem>>
+** <<_Ref384651998,Position subitem>>
+** <<_Ref399770724,Index subitem>>
+
+* <<_Ref384396381,Verification Points>>
+* <<_Ref399770757,Table Contents>>
+* <<_Ref399840486,VisibleCarouselItem>>
+* <<_Ref399770824,AllCarouselItems>>
+
+[[_Ref384651958]]
+== SubItems
+
+[[_Ref399770670]]
+
+=== Identifying carousel items
+
+Carousel items are identified by  _Text_  ,  _Name_  ,  _Position_  , and  _Index_  . Priority in recording for the carousel items is:
+
+1.  _Text_   (If not empty)
+
+2.  _Name_   (If not empty)
+
+3.  _Position_  . If the carousel buttons are not visible, it will record identified by  _Index_   instead of Position.
+
+.Note:
+[NOTE]
+====
+scrolling with the mouse wheel is not supported, and using  _Position_   does not scroll an item into view.
+====
+
+[[_Ref384651973]]
+
+=== Button subitem
+
+There are six possible scroll buttons for the Carousel control allowing to scroll items along the path. Each button is recognized as `AtButton` `(“[button name]”)`.
+
+[options="header", cols="a,a"]
+|====
+|Button Type|Description
+
+|
+[start=1] 
+
+. Scroll button 
+
+|Recorded as: `AtButton``("``FirstItem``")`
+
+|
+[start=2] 
+
+. Scroll button 
+
+|Recorded as: `AtButton``("``PreviousPage``")`
+
+|
+[start=3] 
+
+. Scroll button 
+
+|Recorded as: `AtButton``("``PreviousItem``")`
+
+|
+[start=4] 
+
+. Scroll button 
+
+|Recorded as: `AtButton``("``NextItem``")`
+
+|
+[start=5] 
+
+. Scroll button 
+
+|Recorded as: `AtButton``("``NextPage``")`
+
+|
+[start=6] 
+
+. Scroll button 
+
+|Recorded as: `AtButton``("``LastItem``")`
+
+|====
+
+image::images/Using_WinCarousel_Control_Proxy_1.png[]
+
+[[_Ref384651981]]
+
+=== Text subitem
+
+_Text_   subitem references the `Text` property of the carousel item, which if specified, refers to the visible text on the carousel item. If more than one instance of the  _CarouselItem_   is visible it will interact with the first one on the path. Also if the item is not currently visible it will be scrolled into view.
+
+`Carousel1ComboListBox().Click(``AtText``("Item1"))`
+
+`Carousel1ComboListBox().Click(``AtText``("Item1", 1)) ' Click the second instance of Item1`
+
+[[_Ref384651988]]
+
+=== Name subitem
+
+_Name_   subitem references the `Key` property of the carousel item, which can contain duplicates on value null as it is not required to be set. If more than one instance of the  _CarouselItem_   is visible it will interact with the first one on the path. Also if the item is not currently visible it will be scrolled into view.
+
+`Carousel1ComboListBox().Click(``AtName``("Key1"))`
+
+`Carousel1ComboListBox().Click(``AtName``("", 1)) ' Click the second instance of an empty key`
+
+[[_Ref384651998]]
+
+=== Position subitem
+
+_Position_   subitem refers to the visible position of the carousel item along the path. It is a zero-based index, based on the visible carousel item `UIElement` sorted on the `ItemInfo.Position` property which is an internal property on the `UIElement` to state where it is on the path. You can also use this if you need to click on a particular instance of a carousel item that appears multiple times along a path.
+
+`Carousel1ComboListBox().Click(``AtPosition``(3))`
+
+[[_Ref399770724]]
+
+=== Index subitem
+
+_Index_   subitem refers to the zero-based index of the carousel item in the items collection. If more than one instance of the  _CarouselItem_   is visible it will interact with the first one on the path. Also if the item is not currently visible it will be scrolled into view.
+
+`Carousel1ComboListBox().Click(``AtIndex``(0))`
+
+[[_Ref384396381]]
+== Verification Points
+
+[[_Ref399770757]]
+
+=== Table Contents
+
+The  _Verification Point_   returns a table of data about all or currently visible carousel items using the `VisibleCarouselItem` and `AllCarouselItems` properties.
+
+[[_Ref399840486]]
+
+=== VisibleCarouselItem
+
+Returns a table of data about the currently visible carousel items. The returned data consists of the following properties:
+
+[options="header", cols="a,a,a"]
+|====
+|Property|Description|Type
+
+| _Alpha_ 
+|Representing alpha level of the carousel item.
+|Integer
+
+| _Decimal_ 
+|Representing the scale in percent of the original size of the carousel item.
+|Decimal
+
+| _IsActive_ 
+|Indicates if the item is currently the active item.
+|Boolean
+
+| _IsSelected_ 
+|Indicates if the item is the item is selected.
+|Boolean
+
+| _Name_ 
+|Carousel item’s `Key` property, which can be identified via _Name_ subitem.
+|String
+
+| _NameInstance_ 
+|Indicates the index of the instance that the Name appears in the collection of all carousel items.
+|Integer
+
+| _Scale_ 
+|Representing the carousel item’s scale (In percent) of the original size.
+|Decimal
+
+| _Position_ 
+|Visible position of the carousel item, Zero-based index. 
+
+If item is not visible, it returns -1.
+|Integer
+
+| _Rect_ 
+|The rectangle of the carousel item representing relative coordinates.
+|Rect
+
+| _Text_ 
+|Carousel item’s `Text` property, which can be identified via _Text_ subitem.
+|String
+
+|====
+
+[[_Ref399770824]]
+
+=== AllCarouselItems
+
+Returns a table of data for all carousel items. The returned data consists of the following properties.
+
+[options="header", cols="a,a,a"]
+|====
+|Property|Description|Type
+
+| _Index_ 
+|Visible position of the carousel item, Zero-based index.
+|Integer
+
+| _IsActive_ 
+|Indicates if the item is currently the active item.
+|Boolean
+
+| _IsVisible_ 
+|Indicates if the item is currently visible.
+|Boolean
+
+| _Name_ 
+|Carousel item’s `Key` property, which can be identified via _Name_ subitem.
+|String
+
+| _NameInstance_ 
+|Indicates the index of the instance that the Name appears in the collection of all carousel items.
+|Integer
+
+| _Position_ 
+|Visible position of the carousel item, Zero-based index. If item is not visible, it returns -1.
+|Integer
+
+| _Text_ 
+|Carousel item’s `Text` property, which can be identified via _Text_ subitem.
+|String
+
+| _TextInstance_ 
+|Indicates the index of the instance that the Text appears in the collection of all carousel items.
+|Integer
+
+|====

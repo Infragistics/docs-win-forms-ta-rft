@@ -1,0 +1,17 @@
+﻿////
+
+|metadata|
+{
+    "name": "known-issues-of-the-installer",
+    "controlName": [],
+    "tags": [],
+    "guid": "{8CF97F95-6392-4644-AB68-A4C6EA5515B9}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= インストーラーの既知の問題
+
+インストーラーを使用して {ProductName} (Rational Functional Tester) を WinServer 2003 にインストールする場合、デバッグの実行についてのエラーがスローされます。エラーに対して「いいえ」をクリックしてください。{ProductName} (Rational Functional Tester) のインストールが正常に続行されます。

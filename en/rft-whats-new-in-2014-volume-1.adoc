@@ -1,0 +1,141 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2014-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "bed697d0-eed1-4b63-b9f0-555181b47a8b",  
+    "buildFlags": [],
+    "createdOn": "2014-04-01T18:52:54.2575387Z"
+}
+|metadata|
+////
+
+= What's New in 2014 Volume 1
+
+== Topic Overview
+
+=== Purpose
+
+This topic presents control proxies of the new and enhanced features for the Infragistics® Test Automation for IBM ( _Rational Functional Tester_ ) for 2014 Volume 1 release.
+
+== What’s New Summary
+
+=== What’s new summary chart
+
+The following table summarizes what’s new in 2014 Volume 1.
+
+==== _WinPivotGrid_
+
+[options="header", cols="a,a"]
+|====
+|Feature|Description
+
+|New controls
+|Test Automation for IBM ( _Rational Functional Tester_ ) supports the _WinPivotGrid_ control as part of the Windows Forms product in the 2014.1 release. Details about the supported sub items, actions and _Verification Points_ are explained in the Related topics below. This new feature include supporting record and replay actions on the new DataSelector user control 
+
+==== Related topics: 
+
+* link:winpivotgrid.html[WinPivotGrid] 
+
+|====
+
+==== _WinTab_,  _WinTabStrip_
+
+[options="header", cols="a,a"]
+|====
+|Feature|Description
+
+|<<_Ref382587852,New tab button>>
+|This section Identifies the enhancements made to the _WinTab_™ and _WinTabStrip_™ controls proxies for Windows Forms Test Automation 2014.1.
+
+|====
+
+==== Common Features
+
+[options="header", cols="a,a"]
+|====
+|Feature|Description
+
+|<<_Ref382587568,Right-to-Left support>>
+|This section Identifies the enhancements made to the Infragistics editor controls’ proxies for Windows Forms Test Automation 2014.1.
+
+|====
+
+[[_Ref380501805]]
+== _WinTab_,  _WinTabStrip_
+
+[[_Ref382587852]]
+
+=== New tab button
+
+Test Automation supports interactions with the new button element added in 2014.1. This feature is supported by recognizing the new button element (regardless of its location) and record user action on it as:
+
+For  _WinTab_  control.
+
+[source,csharp]
+----
+UltraTabControl1TabbedPage().Click(AtButton("New Tab"))
+----
+
+For  _WinTabStrip_  control.
+
+[source,csharp]
+----
+UltraTabStripControl1TabbedPag().Click(AtButton("New Tab"))
+----
+
+== Common Features
+
+[[_Ref382587568]]
+
+=== Right-to-Left support
+
+This feature supports all mouse interactions on the editor controls listed below for Right-to-Left and Left-to-Right. This includes button elements, editor buttons, spin buttons, check box buttons, SetFocus action and SetCaret position.
+
+==== Supported controls:
+
+* _WinButton_
+
+* _WinCalculatorDropDown_
+
+* _WinCalendarCombo_
+
+* _WinCheckEditor_
+
+* _WinColorPicker_
+
+* _WinComboEditor_
+
+* _WinCurrencyEditor_
+
+* _WinDateTimeEditor_
+
+* _WinDropDownButton_
+
+* _WinFontNameEditor_
+
+* _WinFormattedLinkLabel_
+
+* _WinFormattedTextEditor_
+
+* _WinLabel_
+
+* _WinMaskedEdit_
+
+* _WinNumericEditor_
+
+* _WinOptionSet_
+
+* _WinProgressBar_
+
+* _WinScrollBar_
+
+* _WinTextEditor_
+
+* _WinTimeSpanEditor_
+
+* _WinTimeZoneEditor_
+
+* _WinTrackBar_

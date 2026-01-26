@@ -1,0 +1,37 @@
+﻿////
+
+|metadata|
+{
+    "name": "users-guide",
+    "controlName": [],
+    "tags": [],
+    "guid": "{9D78917F-CBBD-4A9B-84B6-BD2DF4AEC849}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= ユーザー ガイド
+
+ユーザー ガイドは、タイトルが示すようにユーザーのためのガイドです。ヘルプのこのセクションには、{ProductName} (Rational Functional Tester) 製品に関連する重要な情報が含まれています。ユーザー ガイドの主要なセクションにアクセスするには、以下のリンクをクリックしてください。
+
+== link:introduction.html[概要]
+
+このセクションでは、{ProductName} (Rational Functional Tester) の概要について説明しています。認識が必要な既知の問題のトピックに加え、よくある質問の回答も確認できます。
+
+== link:rft-whats-new.html[新機能]
+
+各ボリューム リリースでは、すでに豊富な機能を持つアプリケーションに、さらに新機能を追加します。ここでは、対象のボリューム リリースで追加または強化された新機能のリストや以前のリリースの機能を確認することができます。
+
+== link:getting-started.html[はじめに]
+
+{ProductName} (Rational Functional Tester) を初めて使用するユーザー向けのスタート ガイドです。ここには、製品の必須条件や作業の開始に必要な設定方法などの情報が記載されています。
+
+== link:using-windows-forms-test-automation.html[{ProductName} (Rational Functional Tester) の使用]
+
+この重要なセクションには、{ProductName} (Rational Functional Tester) の使用方法、たとえば、テストを作成し実行する方法についての情報が記載されています。また、確認ポイントとデータ駆動型操作を使用する方法についての情報もあります。
+
+== link:test-automation-for-infragistics-controls.html[Infragistics コントロールのテスト オートメーション]
+
+Infragistics® Windows Forms コントロールの Test Automation for IBM ( _Rational Functional Tester_  ) について説明します。

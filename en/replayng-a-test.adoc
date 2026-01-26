@@ -1,0 +1,26 @@
+﻿////
+
+|metadata|
+{
+    "name": "replayng-a-test",
+    "controlName": [],
+    "tags": [],
+    "guid": "{B30FBD82-0219-4AA6-B481-46B8A8A45975}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Replaying a Test
+
+After you have link:recording-a-test.html[recorded a script], you can replay the test.
+
+*To play back the test:*
+
+[start=1]
+. On the Functional Test toolbar, click the Run Functional Test Script button.
+[start=2]
+. In the Select Log dialog box, select the script you want to run, and click Finish.
+[start=3]
+. The Functional Test is minimized, and the Playback Monitor starts. As the Functional Test plays back your recorded actions, messages are displayed in the Playback Monitor.

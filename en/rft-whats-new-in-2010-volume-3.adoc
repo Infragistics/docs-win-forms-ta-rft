@@ -1,0 +1,53 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2010-volume-3",
+    "controlName": [],
+    "tags": [],
+    "guid": "518b8ae2-9d7c-4849-a804-78697cec982a",  
+    "buildFlags": [],
+    "createdOn": "2010-10-20T15:32:41.1052657Z"
+}
+|metadata|
+////
+
+= What's New in 2010 Volume 3
+
+The {ProductName} (Rational Functional Tester) 2010.3 release includes automated testing support for new features added to the WinToolbarsManager™ component. In addition, beginning with the 10.3 release, Infragistics® provides support for testing applications built using Infragistics version-free assemblies.
+
+== WinToolbarsManager™
+
+The UltraToolbarsDockAreaProxy has changed to support your automated testing of the Office 2010 Ribbon and application menu 2010 functionality.
+
+* A new sub-item, AtLocation (“RibbonPinButton”) is added for the ribbon’s pin button.
+
+When the ribbon pin button is clicked it records as:
+
+_TAForm_Toolbars_Dock_Area_Top().Click(AtLocation("RibbonPinButton"))
+
+* The existing sub-item AtLocation (“ApplicationMenuButton”) is extended to cover ApplicationMenu2010 button. However, the recorded action of clicking the application menu is the same no matter what style is applied to the application menu button, e.g., ScenicRibbon, Default or Office2010.
+
+When the application menu button is clicked it records as:
+
+_TAForm_Toolbars_Dock_Area_Top().Click(AtLocation("ApplicationMenuButton"))
+
+* When a Tool on the ApplicationMenu2010 is clicked it records as a tool path with its root location called ‘Backstage’:
+
+_Dock_Area_Top().Click(AtPath("[Backstage]$$->$$StateButtonTool1"))
+
+_Dock_Area_Top().Click(AtPath("[Backstage]$$->$$PopupMenuTool3$$->$$ButtonTool6"))
+
+A new verification point, Ribbon Application Menu 2010 is added, which is available only when the Application Menu 2010 is visible.
+
+.Note
+[NOTE]
+====
+Some Tool properties may change depending on UltraToolbarsManager style. If the Ribbon Application Menu 2010 verification point is recorded on a Ribbon with Office2010 style and then replayed with WindowsVista style, the verification point will fail since some tools (like Label Tool, StateButton Tool and Button Tool) will have different Height and Width Resolved values. If this verification point is replayed on a Ribbon that does not display an ApplicationMenu or on a Ribbon that displays default (standard) application menu, the script will throw an “UnsupportedActionException”.
+====
+
+The existing Ribbon Hierarchy and Ribbon Items Properties verification points will include either “ApplicationMenu” or “ApplicationMenu2010” depending on the setting. The Ribbon Application Menu verification point is available only when the default ApplicationMenu is visible.
+
+== Version-Free Test Automation Assembly Names
+
+Starting with the release of 2010 Volume 3, Infragistics provides version-free Windows Forms Test Automation assemblies that are compatible with the version free assemblies of Ultimate UI for Windows Forms. These assemblies are required only if you are testing an application that is built with the Infragistics version-free assemblies. To learn more about deploying these assemblies, please read the link:version-free-assembly-names.html[Version-Free Assembly Names] topic.

@@ -1,0 +1,27 @@
+﻿////
+
+|metadata|
+{
+    "name": "getting-started",
+    "controlName": [],
+    "tags": [],
+    "guid": "{4E4C6A70-6404-40C0-83E0-69BFE069A2A3}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Getting Started
+
+Automated testing with {ProductName} (Rational Functional Tester) essentially consists of two main tasks: recording and replaying tests. In the recording stage, the tester clicks through many or all of the potential scenarios that an end user may face while using the tested software package. While replaying tests, the tester has the ability to change inputs, set checkpoints, and quickly run through a recorded test time and time again (regression testing).
+
+Click the links below for important information on how you can get up and running quickly with the {ProductName} (Rational Functional Tester) product:
+
+* link:accessing-the-samples.html[Accessing the Samples]
+* link:manually-setting-up-testadvantage-for-windows-forms-(-for-ibm-rational-functional-tester-).html[Manually Setting Up {ProductName} (Rational Functional Tester)]
+* link:prerequisites.html[Prerequisites]
+* link:supported-controls-and-components.html[Supported Controls and Components]
+* link:supported-data-verification-points.html[Supported Data Verification Points]
+* link:proxies-with-data-driven-capabilities.html[Proxies with Data-Driven Capabilities]
+* link:version-free-assembly-names.html[Version-Free Assembly Names]

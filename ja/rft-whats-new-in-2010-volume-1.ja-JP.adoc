@@ -1,0 +1,41 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2010-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "{71C7EBA7-23D8-4D88-8BE5-BA3308ABB6E7}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= 2010 Volume 1 の新機能
+
+{ProductName} (Rational Functional Tester) 2010.1 リリースでは、以下の新しい Ultimate UI for Windows Forms コントロールがサポートされています。
+
+== WinSplitter
+
+新しい WinSplitter コントロールのオートメーション テストをサポートするために、新しい UltraSplitterProxy が提供されています。このプロキシは、縮小/展開ボタンをクリックした場合の AtButton (“Toggle”) と、縮小/展開ボタン以外をクリックした場合の AtPoint( … ) のようなサブ項目をサポートします。UltraSplitterProxy は、標準の Click と DragToScreenpoint の各アクションをサポートします。このプロキシがサポートする確認ポイントは、「項目プロパティ」のみです。
+
+== WinMessageBoxManager
+
+WinMessageBoxManager コンポーネントにより表示および管理される新しい MessageBoxControl のオートメーション テストをサポートするために、新しいプロキシ (MessageBoxControlProxy) とテスト オブジェクトが作成されました。MessageBoxControlProxy は、いずれかの MessageBox ボタン (Yes、No、OK、Cancel、Ignore、Retry、Abort、Help) をクリックした場合の AtButton([ボタン テキスト])、イメージ リンクのクリックを含むテキスト リンクとボタン以外をクリックした場合の AtPoint( … )、MessageBox テキスト領域内部に埋め込まれたリンクをクリックした場合の AtList(AtLocation(…)、AtText(…)) のようなサブ項目をサポートします。AtList サブ項目の最初のサブ項目である (AtLocation) は、リンクが埋め込まれている領域を指定します。オプションは、以下の 3 つのうちのいずれかになります。
+
+* ヘッダー領域をクリックした場合は AtLocation(“HeaderArea”)
+* コンテンツ領域をクリックした場合は AtLocation(“ContentArea”)
+* フッター領域をクリックした場合は AtLocation(“FooterArea”)
+
+2 番目のサブ項目である (AtText) は、リンクと関連付けられたテキストを指定します。同じテキストに複数のリンクがある場合、操作対象のリンクを識別するためにインデクサーが使用されます。MessageBoxControlProxy は、標準の Click と Drag の各アクションをサポートします。このプロキシがサポートする確認ポイントは、「項目プロパティ」のみです。項目プロパティ確認ポイントは、異なるテキストとボタンのような複数のメッセージボックスの設定を表す MessageBoxInfo の子ノードをリストします。以下の外観オブジェクト用のノードも含まれます。Appearance、ButtonAppearance、ButonAreaAppearance、ContentAreaAppearance、HeaderAppearance、FooterAppearance。
+
+== WinActivityIndicator
+
+新しい WinActivityIndicator コントロールのオートメーション テストをサポートするために、新しい UltraActivityIndicatorProxy が作成されました。このプロキシがサポートする確認ポイントは、「項目プロパティ」のみです。
+
+== WinGanttView
+
+WinGanttView のオートメーション テストのために、新しい UltraGanttViewProxy が追加されました。WinGanttView コントロールは Grid を含むため、UltraGanttViewProxy は UltraGridProxy から派生されます。サポートされる確認ポイントには、項目プロパティ、アクティブ セル、アクティブ行、GanttView オーナー、GanttView タスク、GanttView アクティブ タスク、GanttView アクティブ プロジェクトがあります。
+
+UltraGanttViewProxy は、グリッドとタイムライン セクションの間のスプリッター バーで操作を実行した場合の ATLocation(“Splitter”)、垂直スクロールバーおよび水平スクロールバーでクリックした場合のスクロールバー サブ項目、タスク バー領域をクリックした場合とサマリー展開/縮小タスクの場合のタスク サブ項目、時間帯をクリックした場合の時間帯サブ項目、時間帯列ヘッダーをクリックした場合の時間帯列ヘッダー サブ項目、列ヘッダー上のナビゲーション ボタンをクリックした場合の列ヘッダーのナビゲーション ボタン サブ項目のようなサブ項目をサポートします。さらに、通常のグリッド サブ項目もサポートします。標準の Click、Drag、およびグリッドから継承した各アクションも、このプロキシによりサポートされます。

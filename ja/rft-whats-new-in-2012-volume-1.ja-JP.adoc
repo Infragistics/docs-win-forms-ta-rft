@@ -1,0 +1,28 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2012-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "e3ddf245-1b8b-4f01-8310-83fbb53f4a6d",  
+    "buildFlags": [],
+    "createdOn": "2012-05-16T14:56:35.1504523Z"
+}
+|metadata|
+////
+
+= 2012 Volume 1 の新機能
+
+*概要*
+
+{ProductName} (Rational Functional Tester) 2012 volume 1 リリースでは、Ultimate UI for Windows Forms 2012 Volume 1 コントロールのスイート全体のテスト機能をサポートしています。
+
+*WinGrid - 空メッセージの確認ポイント*
+
+新しい*_空メッセージ_* の確認ポイントが追加されました。これによりテスターは、グリッドの空メッセージ機能設定に基づき、グリッド内に表示される異なるタイプの空メッセージを確認できるようになります。新しい確認ポイントは、以下の情報が含まれています。
+
+* MessageType -  _{NoDataSourceMessage, NoRowsInDataSourceMessage, NoVisibleRowsMessage}_  各タイプについて
+* MessageEnabled
+* MessageText
+

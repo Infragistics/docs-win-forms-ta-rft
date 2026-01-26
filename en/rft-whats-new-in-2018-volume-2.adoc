@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2018-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "288499ef-9843-4e68-b97b-83f282613cfc",  
+    "buildFlags": [],
+    "createdOn": "2019-1-24T12:59:31.2423494Z"
+}
+|metadata|
+////
+
+= What's New in 2018 Volume 2
+
+== Support for Infragistics Windows Forms 2018 Volume 2
+
+=== All Windows Forms controls
+
+The Windows Forms Test Automation for IBM (Rational Functional Tester) 2018 volume 2 release supports testing functionality across the suite of Infragistics Windows Forms 2018 volume 2 controls.

@@ -1,0 +1,20 @@
+﻿////
+
+|metadata|
+{
+    "name": "known-issues-of-the-wintoolbarsmanager",
+    "controlName": [],
+    "tags": [],
+    "guid": "{F882AB26-410D-48BE-BD1F-286B347B55F5}",  
+    "buildFlags": [],
+    "createdOn": "2008-11-06T14:05:39Z"
+}
+|metadata|
+////
+
+= WinToolbarsManager の既知の問題
+
+このトピックは、WinToolbarsManager™ コントロールの既知の問題について説明します。
+
+* Rational Functional Tester iFix001 をインストールした場合、 WinToolbarsManager の確認ポイントは追加できません。ただし、既に作成済みの確認ポイントは問題なく再生できます。
+* Windows Vista で記録中にツールバーまたはツール確認ポイントを追加することはできません。

@@ -1,0 +1,40 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2011-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "710e1f42-5153-4226-bf62-2155269180a0",  
+    "buildFlags": [],
+    "createdOn": "2011-05-11T20:31:00.1571811Z"
+}
+|metadata|
+////
+
+= 2011 Volume 1 の新機能
+
+{ProductName} (Rational Functional Tester) 2011.1 リリースでは、WinToolbarsManager コンポーネントに追加された新しい Ribbon Customization 機能に対するオートメーション テストがサポートされています。
+
+== WinToolbarsManager
+
+Ribbon Customization 機能のオートメーション テストをサポートするために、UltraTreeProxy が変更されました。
+
+カスタム設定ダイアログの右側に表示されるツリーに、以下の新しいサブ項目が追加されました。
+
+* AtLocation (“GrabHandle”)
+* AtLocation (“NewGroup”)
+* AtLocation (“Modify”)
+* AtLocation (“Remove”)
+* AtLocation (“Hide”)
+* AtLocation (“Show”)
+
+新しい確認ポイントの Ribbon Customization Data が追加されました。これは、カスタム設定ダイアログの Ribbon レイアウトツリーの各ノードを表示するツリー テスト データ構造です。新しい確認ポイントは、リボンのカスタム設定コントロールの右側に表示されるツリーコントロールのみで利用できます。
+
+各ノードには以下のプロパティがあります。
+
+* CanBeModified
+* IsStockItem
+* RibbonItemNodeType
+* Visible
+* data

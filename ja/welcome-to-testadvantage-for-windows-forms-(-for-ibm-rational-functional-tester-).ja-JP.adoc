@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "welcome-to-testadvantage-for-windows-forms-(-for-ibm-rational-functional-tester-)",
+    "controlName": [],
+    "tags": [],
+    "guid": "{17968647-0115-4414-B25E-6F8B63B60652}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= {ProductName} (Rational Functional Tester) へようこそ
+
+{ProductName} (Rational Functional Tester) は、このような製品カテゴリーとして初めての IBM Rational Functional Tester を使用して構築されたカスタム プロキシ集です。{ProductName} (Rational Functional Tester) はプレゼンテーション レイヤーのオートメーション テストを可能にします。開発者は、Infragistics 製品を使用して開発したユーザー インターフェイスが装備された Windows Forms アプリケーションの完全な回帰テストを実行できます。
+
+これらのプロキシ ライブラリを使用し、Infragistics のコントロールで構築されたアプリケーションをテストすることは、データ確認ポイント、データ駆動のサポート、サブ項目の迅速で簡単な識別など、Microsoft の標準的なコントロールに対して、Rational Functional Tester が提供する価値ある機能をすべて持つことになります。テスターは、VB.NET または Java を使用した、より読みやすい保守が可能なスクリプト コマンドで操作を簡単に記録し、再生することができます。高速で信頼性の高い再生により、同じ時間でより多くのテスト スクリプトを実行できるため、アプリケーションを幅広くテストでき、結果的にソフトウェアの品質が向上します。
+
+image::images/Welcome_to_Windows_Forms_Test_Automation_for_IBM(RFT).png[TestAdvantage のデフォルト イメージ]

@@ -1,0 +1,44 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-revision-history",
+    "controlName": [],
+    "tags": [],
+    "guid": "{0F9711EF-45D9-42BE-9293-5B65507E3520}",  
+    "buildFlags": [],
+    "createdOn": "2008-06-06T10:02:23Z"
+}
+|metadata|
+////
+
+= 改訂履歴
+
+{ProductName} (Rational Functional Tester) の各バージョンで追加された新しい機能および拡張機能は、以下のリンクを参照してください。
+
+* link:rft-whats-new-in-2018-volume-2.html[2018 Volume 2 の新機能]
+* link:rft-whats-new-in-2018-volume-1.html[2018 Volume 1 の新機能]
+* link:rft-whats-new-in-2017-volume-2.html[2017 Volume 2 の新機能]
+* link:rft-whats-new-in-2017-volume-1.html[2017 Volume 1 の新機能]
+* link:rft-whats-new-in-2016-volume-2.html[2016 Volume 2 の新機能]
+* link:rft-whats-new-in-2016-volume-1.html[2016 Volume 1 の新機能]
+* link:whats-new-in-2015-volume-2.html[2015 Volume 2 の新機能]
+* link:whats-new-whats-new-in-2015-volume-1.html[2015 Volume 1 の新機能]
+* link:rft-whats-new-in-2014-volume-2.html[2014 Volume 2 の新機能]
+* link:rft-whats-new-in-2014-volume-1.html[2014 Volume 1 の新機能]
+* link:rft-whats-new-in-2013-volume-2.html[2013 Volume 2 の新機能]
+* link:rft-whats-new-in-2013-volume-1.html[2013 Volume 1 の新機能]
+* link:rft-whats-new-in-2012-volume-2.html[2012 Volume 2 の新機能]
+* link:rft-whats-new-in-2012-volume-1.html[2012 Volume 1 の新機能]
+* link:rft-whats-new-in-2011-volume-2.html[2011 Volume 2 の新機能]
+* link:rft-whats-new-in-2011-volume-1.html[2011 Volume 1 の新機能]
+* link:rft-whats-new-in-2010-volume-3.html[2010 Volume 3 の新機能]
+* link:rft-whats-new-in-2010-volume-2.html[2010 Volume 2 の新機能]
+* link:rft-whats-new-in-2010-volume-1.html[2010 Volume 1 の新機能]
+* link:rft-whats-new-in-2009-volume-2.html[2009 Volume 2 の新機能]
+* link:rft-whats-new-in-2009-volume-1.html[2009 Volume 1 の新機能]
+* link:rft-whats-new-in-2008-volume-3.html[2008 Volume 3 の新機能]
+* link:rft-whats-new-in-2008-volume-2.html[2008 Volume 2 の新機能]
+* link:rft-whats-new-in-2008-volume-1.html[2008 Volume 1 の新機能]
+* link:rft-whats-new-in-2007-volume-3.html[2007 Volume 3 の新機能]
+* link:rft-whats-new-in-2007-volume-2.html[2007 Volume 2 の新機能]

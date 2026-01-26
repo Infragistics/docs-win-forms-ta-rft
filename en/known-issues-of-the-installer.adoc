@@ -1,0 +1,17 @@
+﻿////
+
+|metadata|
+{
+    "name": "known-issues-of-the-installer",
+    "controlName": [],
+    "tags": [],
+    "guid": "{8CF97F95-6392-4644-AB68-A4C6EA5515B9}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Known Issues of the Installer
+
+When using the installer to install {ProductName} (Rational Functional Tester) on WinServer 2003, an error will be thrown asking if you wish to debug. Click No. The installer will continue to install {ProductName} (Rational Functional Tester) on to your machine correctly.

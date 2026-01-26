@@ -1,0 +1,24 @@
+﻿////
+
+|metadata|
+{
+    "name": "known-issues-of-the-winlistview",
+    "controlName": [],
+    "tags": [],
+    "guid": "{F5845487-ED3F-40B6-8024-31F3C28C49A1}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Known Issues of the WinListView
+
+This topic describes known issues related to the WinListView™ control that we became aware of during the development cycle.
+
+== Editing a ListItem
+
+When editing a ListItem, if you double-click the item to enter edit mode, you must do either of the following in order to edit the text:
+
+* Hardcode a "sleep(1)" after the double-click action, and before the text is modified.
+* Add a datapool to the embeddable editor to do the text editing on the internal editor.

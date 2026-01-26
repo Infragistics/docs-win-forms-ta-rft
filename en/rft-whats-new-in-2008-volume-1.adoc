@@ -1,0 +1,37 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2008-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "{2FBF7BFE-6518-49A9-8760-1AD1D5679AB9}",  
+    "buildFlags": [],
+    "createdOn": "2008-11-07T12:05:46Z"
+}
+|metadata|
+////
+
+= What's New in 2008 Volume 1
+
+The {ProductName} (Rational Functional Tester) 2008 Volume 1 release includes improved support for the following Ultimate UI for Windows Forms controls and components.
+
+== WinTrackBar™
+
+* The new WinTackBar control is now supported by {ProductName} (Rational Functional Tester) including Record, Replay, and verification point.
+
+== Close button support for WinTab™, WinTabStrip™, and WinTabbedMDI™
+
+* Added recording and replaying actions support for interacting with the Close Button feature on the WinTab, WinTabStrip and WinTabbedMDI controls.
+
+== WinListView™
+
+* We have added support for the AutoFitColumns property, which allows the WinListView control to automatically size all columns to fit in the space allotted. A new action, AutoResizeColumn, is added to the WinListView proxy.
+
+== WinTree™
+
+* The new multi-level node selection for the WinTree is now supported by the WinTree proxy.
+
+== SetNAProperty (all controls)
+
+* A new action, SetNAProperty, is added to all control proxies to allow you to set the value of a specific property on any Ultimate UI for Windows Forms control.

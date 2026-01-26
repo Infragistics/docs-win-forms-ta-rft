@@ -1,0 +1,59 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2010-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "8738f765-6638-4ab5-b5d8-98d61f13b8d7",  
+    "buildFlags": [],
+    "createdOn": "2010-07-07T20:51:43.8877093Z"
+}
+|metadata|
+////
+
+= What's New in 2010 Volume 2
+
+The {ProductName} (Rational Functional Tester) 2010.2 release includes support for the following Ultimate UI for Windows Forms controls.
+
+== WinEditors™
+
+We have added a new proxy and test object to support the automated UI testing of the new TimeSpan editor added to our WinEditors in the 2010 Volume 2 release. In addition to the GetNAProperty and SetNAProperty supported by all of our proxies, the standard Click and Drag actions, and the Item Properties verification point, UltraTimeSpanEditorProxy supports the following additional subitems:
+
+* SCROLL_UPBUTTON, SCROLL_DOWNBUTTON – Recorded for actions on the TimeSpan editor's default spin button.
+* AtButton(…) – Recorded when any EditorButtonBase is clicked with a location and position identifying the button.
+* AtPoint(…) – Recorded when there is a click anywhere outside of the TimeSpan editor's buttons.
+
+== WinFormManager™
+
+To support your automated UI testing of our new WinFormManager component introduced in the 2010 Volume 2 release we have added a new proxy named UltraFormDockAreaProxy, and a new test object called the UltraFormDockAreaTestObject which governs the dock area control which WinFormManager uses to manipulate the visual appearance of the borders and captions on your .NET Forms.
+
+In addition to GetNAProperty and SetNAProperty which are supported by all of our proxies, the UltraFormDockAreaProxy supports the following additional subitems:
+
+* AtList(…) – Represents subitems on nested child forms (where the child forms have been maximized).
+* AtLocation(…) – Records the following locations which have special meaning to your Form:
+
+** RESTORE_BUTTON
+** CHILD_FORM
+** CLOSE_BUTTON
+** CONTEXTHELP_BUTTON
+** MAXIMIZE_BUTTON
+** MINIMIZE_BUTTON
+** SYSTEM_BUTTON
+** CAPTION
+
+* AtPoint(…) – Recorded when there is a click that is not already defined as a location, either one of the strings above or one of the constants defined below.
+
+In addition to the standard Click and Drag actions, this proxy handles two additional actions: Move and Resize. A Move action occurs when a drag action has been initiated on the Form’s caption area. A Resize action occurs when a drag operation has been initiated on the edge of the Form, such as when a user wants to resize the Form.
+
+We also support the following verification points for testing the WinFormManager:
+
+* Text
+* Item Properties
+* FormStyleSettings
+
+== DropDown Controls
+
+In the Ultimate UI for Windows Forms 2010 Volume 2 controls we added the ability for drop down areas on WinComboEditor™, WinCombo™, WinDropDown™ and WinPopupControlContainer™ to be resizable by dragging on their corner resize handle. We now support automating your user interface testing of this feature within your test scripts with the DropDownResizeControlProxy and associated test object which record drags of the resize handle as a DragToScreenPoint action.
+
+DropDownResizeControlProxy supports standard Click and Drag actions, it inherits GetNAProperty and SetNAProperty which all of our proxies support, and it provides the Item Properties verification point.

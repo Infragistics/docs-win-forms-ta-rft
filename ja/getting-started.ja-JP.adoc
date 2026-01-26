@@ -1,0 +1,27 @@
+﻿////
+
+|metadata|
+{
+    "name": "getting-started",
+    "controlName": [],
+    "tags": [],
+    "guid": "{4E4C6A70-6404-40C0-83E0-69BFE069A2A3}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= はじめに
+
+{ProductName} (Rational Functional Tester) によるオートメーション テストは、実際にテストの記録と再生という 2 つの主要なタスクで構成されています。記録の段階では、テスターはエンド ユーザーがテスト済みのソフトウェア パッケージを使用し直面すると予想される多くのシナリオ（またはすべてのシナリオ）で操作を実行します。テスターはテストの再生中に、入力の変更、チェックポイントの設定、記録されたテスト (回帰テスト) を迅速に繰返し調べることができます。
+
+{ProductName} (Rational Functional Tester) 製品を迅速に設定および実行する方法の重要な情報については、以下のリンクをクリックしてください。
+
+* link:accessing-the-samples.html[サンプルへのアクセス]
+* link:manually-setting-up-testadvantage-for-windows-forms-(-for-ibm-rational-functional-tester-).html[{ProductName} (Rational Functional Tester) の手動設定]
+* link:prerequisites.html[前提条件]
+* link:supported-controls-and-components.html[サポートされるコントロールおよびコンポーネント]
+* link:supported-data-verification-points.html[サポートされるデータ確認ポイント]
+* link:proxies-with-data-driven-capabilities.html[データ駆動型機能を持つプロキシ]
+* link:version-free-assembly-names.html[バージョンフリー アセンブリ名]

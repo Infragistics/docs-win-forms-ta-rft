@@ -1,0 +1,20 @@
+﻿////
+
+|metadata|
+{
+    "name": "known-issues-of-the-wintoolbarsmanager",
+    "controlName": [],
+    "tags": [],
+    "guid": "{F882AB26-410D-48BE-BD1F-286B347B55F5}",  
+    "buildFlags": [],
+    "createdOn": "2008-11-06T14:05:39Z"
+}
+|metadata|
+////
+
+= Known Issues of the WinToolbarsManager
+
+This topic describes known issues related to the WinToolbarsManager™ control that we became aware of during the development cycle.
+
+* If you have installed Rational Functional Tester iFix001, adding a verification point for WinToolbarsManager is not possible. However, replaying verification point that has been created previously will work without a problem.
+* On Windows Vista, adding verification points for toolbars or tools on a toolbar is not possible during record.

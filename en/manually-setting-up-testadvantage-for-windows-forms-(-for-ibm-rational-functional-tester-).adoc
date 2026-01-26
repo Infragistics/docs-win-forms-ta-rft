@@ -1,0 +1,40 @@
+﻿////
+
+|metadata|
+{
+    "name": "manually-setting-up-testadvantage-for-windows-forms-(-for-ibm-rational-functional-tester-)",
+    "controlName": [],
+    "tags": [],
+    "guid": "{603238A0-C8B3-43AF-8C10-72997F49D1E9}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Manually Setting Up {ProductName} (Rational Functional Tester)
+
+You must have IBM Rational Functional Tester 7.0.1.1 (or later) installed in order to install {ProductName} (Rational Functional Tester).
+
+*To manually set up {ProductName} (Rational Functional Tester) to work with Rational Functional Tester:*
+
+[start=1]
+. Verify that the {ProductName} (Rational Functional Tester) assemblies and customization files exist in the bin and config subfolders of the following default installation folder. These are located in the following directory: 
+
+CLR4:  _{InstallPath}\CLR40\Bin folder_
+
+[start=2]
+. Remove the Infragistics files from the Rational customization folder. These files are located in the following directory:
+
+**  _C:\Documents and Settings\All Users\Application Data\IBM\RFT\customization_ 
+
+[start=3]
+. Copy all the files in the bin subfolder to the Rational Functional Tester's customization folder.
+[start=4]
+. Copy the file with extension "rftcust" file from the config subfolder to the customization folder.
+[start=5]
+. Open the file with extension “rftop” in notepad and copy all text between <!-- START: TestAutomation RecognitionProperties -$$->$$ and <!-- END: TestAutomation RecognitionProperties -$$->$$.
+[start=6]
+. Paste the copied text into the “CustomObjRecProp.rftop” file, located in the customization folder, after the following <Net> tag.
+[start=7]
+. Restart your machine to ensure that all processes that references the Rational Functional Tester assemblies are restarted.

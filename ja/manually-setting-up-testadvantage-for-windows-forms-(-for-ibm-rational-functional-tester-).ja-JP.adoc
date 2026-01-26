@@ -1,0 +1,40 @@
+﻿////
+
+|metadata|
+{
+    "name": "manually-setting-up-testadvantage-for-windows-forms-(-for-ibm-rational-functional-tester-)",
+    "controlName": [],
+    "tags": [],
+    "guid": "{603238A0-C8B3-43AF-8C10-72997F49D1E9}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= {ProductName} (Rational Functional Tester) の手動設定
+
+{ProductName} (Rational Functional Tester) をインストールするには、IBM Rational Functional Tester 7.0.1.1 (またはそれ以降) が必要です。
+
+*Rational Functional Tester で動作させる、{ProductName} (Rational Functional Tester) を手動で設定する場合:*
+
+[start=1]
+. {ProductName} (Rational Functional Tester) のアセンブリとカスタマイズ ファイルが、以下のデフォルトのインストール フォルダーの bin と config サブフォルダー内にあることを確認してください。ディレクトリは以下のとおりです。 
+
+CLR4:  _{InstallPath}\CLR40\Bin folder_
+
+[start=2]
+. Rational カスタム フォルダーから Infragistics ファイルを削除します。これらのファイルのディレクトリは以下のとおりです。
+
+**  _C:\Documents and Settings\All Users\Application Data\IBM\RFT\customization_ 
+
+[start=3]
+. bin サブフォルダーのすべてのファイルを Rational Functional Tester のカスタム フォルダーにコピーします。
+[start=4]
+. 拡張子が「rftcust」のファイルを、config サブフォルダーからカスタム フォルダーにコピーします。
+[start=5]
+. 拡張子が「rftop」のファイルをノートパッドで開き、<!-- START: TestAutomation RecognitionProperties -$$->$$ から <!-- END: TestAutomation RecognitionProperties -$$->$$ までのすべてのテキストをコピーします。
+[start=6]
+. カスタム フォルダーの CustomObjRecProp.rftop ファイルの <Net> タグ以降に、コピーしたテキストを貼り付けます。
+[start=7]
+. マシンを再起動します。すべてのプロセスが、Rational Functional Tester アセンブリの再起動を参照していることを確認します。

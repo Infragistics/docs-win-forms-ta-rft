@@ -1,0 +1,23 @@
+﻿////
+
+|metadata|
+{
+    "name": "version-free-assembly-names",
+    "controlName": [],
+    "tags": [],
+    "guid": "b1a5bc0c-44a9-4912-8a1b-7a578260d1ca",  
+    "buildFlags": [],
+    "createdOn": "2010-11-08T16:13:23.7446225Z"
+}
+|metadata|
+////
+
+= Version-Free Assembly Names
+
+The version-free named assemblies do not have the trailing version number and the CLR identity in their names. For example, “Infragistics2.RFT.Shared.v10.3.dll” is available as “Infragistics.RFT.Shared.dll”.
+
+The Test Automation RFT version-free named assemblies are compatible with the version-free named assemblies of Ultimate UI for Windows Forms (e.g. Infragistics.Win.dll). These assemblies are required only if you are testing an application that is built with the Infragistics version-free named assemblies.
+
+The Test Automation assemblies refer to the corresponding Infragistics assemblies. Since the names of the version-free Infragistics assemblies are different, you must have the new set of version-free Test Automation assemblies.
+
+You can switch to the version-free build version of our assemblies using the Version Utility tool. To know more about Version Utility please see the link:using-the-version-utility.html[Using the Version Utility] topic.

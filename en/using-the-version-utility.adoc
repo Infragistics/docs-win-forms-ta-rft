@@ -1,0 +1,29 @@
+﻿////
+
+|metadata|
+{
+    "name": "using-the-version-utility",
+    "controlName": [],
+    "tags": [],
+    "guid": "{B7EAB01F-18D5-4008-B50E-E61F95EB6582}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Using the Version Utility
+
+Each {ProductName} (Rational Functional Tester) version works only with the same version of Ultimate UI for Windows Forms. Every time you switch between versions of Ultimate UI for Windows Forms, you will need to switch the active version of the Test Automation that RFT is loading to match the version of Infragistics.
+
+With {ProductName} (Rational Functional Tester) Version Utility, you can quickly switch between the versions of {ProductName} (Rational Functional Tester) that are installed on the current machine so that Rational Functional Tester will work with that version of Ultimate UI for Windows Forms.
+
+.Note
+[NOTE]
+====
+When changing active versions, you must restart Rational Functional Tester to pick up the new settings.
+====
+
+The utility will also allow the user to disable all {ProductName} (Rational Functional Tester) versions so that Rational Functional Tester will act as if {ProductName} (Rational Functional Tester) is not installed on your system.
+
+image::images/TA-RFTVersionUtil18.1.png[Version Utility]

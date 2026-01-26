@@ -1,0 +1,141 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2014-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "bed697d0-eed1-4b63-b9f0-555181b47a8b",  
+    "buildFlags": [],
+    "createdOn": "2014-04-01T18:52:54.2575387Z"
+}
+|metadata|
+////
+
+= 2014 Volume 1 の新機能
+
+== トピックの概要
+
+=== 目的
+
+このトピックは、Infragistics® Test Automation for IBM ( _Rational Functional Tester_ ) for 2014 Volume 1 の新しい機能および拡張機能のコントロール プロキシーについて説明します。
+
+== 新機能の概要
+
+=== 新機能の概要表
+
+以下の表は 2014 Volume 1 の新機能の概要を提供します。
+
+==== _WinPivotGrid_
+
+[options="header", cols="a,a"]
+|====
+|機能|説明
+
+|新しいコントロール
+|Test Automation for IBM ( _Rational Functional Tester_ ) は、Windows Forms 2014 Volume 1 製品の一部として _WinPivotGrid_ コントロールをサポートします。サポートされたサブ項目、アクション、および確認ポイントの詳細については、以下の関連トピックで説明します。この新しい機能は、新しい DataSelector コントロールの記録と再生操作がサポートされます。 
+
+==== 関連するトピック: 
+
+* link:winpivotgrid.html[WinPivotGrid] 
+
+|====
+
+==== _WinTab_  と  _WinTabStrip_
+
+[options="header", cols="a,a"]
+|====
+|機能|説明
+
+|<<_Ref382587852,新しいタブ ボタン>>
+|このセクションでは、Windows Forms Test Automation 2014.1 の _WinTab_ ™ および _WinTabStrip_ ™ コントロール プロキシの拡張機能について説明します。
+
+|====
+
+==== 共通機能
+
+[options="header", cols="a,a"]
+|====
+|機能|説明
+
+|<<_Ref382587568,右から左サポート>>
+|このセクションでは、Windows Forms Test Automation 2014.1 の Infragistics エディター コントロール プロキシの拡張機能について説明します。
+
+|====
+
+[[_Ref380501805]]
+== _WinTab_  と  _WinTabStrip_
+
+[[_Ref382587852]]
+
+=== 新しいタブ ボタン
+
+Test Automation は、2014.1 で追加された新しいボタン要素でのインタラクションをサポートします。この機能は、新しいボタン要素 (その位置に関係なく) を認識し、ユーザー操作を記録します。
+
+_WinTab_  コントロール。
+
+[source,csharp]
+----
+UltraTabControl1TabbedPage().Click(AtButton("New Tab"))
+----
+
+_WinTabStrip_  コントロール。
+
+[source,csharp]
+----
+UltraTabStripControl1TabbedPag().Click(AtButton("New Tab"))
+----
+
+== 共通機能
+
+[[_Ref382587568]]
+
+=== 右から左サポート
+
+この機能は、以下のエディター コントロールで右から左および左から右のすべてのマウス操作をサポートします。これには、ボタン要素、エディター ボタン、スピン ボタン、チェック ボックス、SetFocus アクション、および SetCaret の位置が含まれます。
+
+==== サポートされるコントロール:
+
+* _WinButton_
+
+* _WinCalculatorDropDown_
+
+* _WinCalendarCombo_
+
+* _WinCheckEditor_
+
+* _WinColorPicker_
+
+* _WinComboEditor_
+
+* _WinCurrencyEditor_
+
+* _WinDateTimeEditor_
+
+* _WinDropDownButton_
+
+* _WinFontNameEditor_
+
+* _WinFormattedLinkLabel_
+
+* _WinFormattedTextEditor_
+
+* _WinLabel_
+
+* _WinMaskedEdit_
+
+* _WinNumericEditor_
+
+* _WinOptionSet_
+
+* _WinProgressBar_
+
+* _WinScrollBar_
+
+* _WinTextEditor_
+
+* _WinTimeSpanEditor_
+
+* _WinTimeZoneEditor_
+
+* _WinTrackBar_

@@ -1,0 +1,22 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2008-volume-3",
+    "controlName": [],
+    "tags": [],
+    "guid": "{35DDE52B-17DF-452B-A16F-918B3685865F}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= What's New in 2008 Volume 3
+
+The {ProductName} (Rational Functional Tester) 2008 Volume 3 release has been tested extensively to ensure complete compatibility with the Ultimate UI for Windows Forms 2008 Volume 3 release.
+
+== WinChart™
+
+* We have added a number of new actions to support the new TreeMap Chart type.
+* We have also added support for the Scroll Scale functionality.

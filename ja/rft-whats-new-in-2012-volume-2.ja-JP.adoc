@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2012-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "288499ef-9843-4e68-b97b-83f282613cfc",  
+    "buildFlags": [],
+    "createdOn": "2012-10-11T12:59:31.2423494Z"
+}
+|metadata|
+////
+
+= 2012 Volume 2 の新機能
+
+== Ultimate UI for Windows Forms 2012 Volume 2 のサポート
+
+=== Windows Forms のすべてのコントロール
+
+Ultimate UI for Windows Forms 2012 Volume 2 では、Windows Form のすべてのコントロールが {ProductName} (Rational Functional Tester) でサポートされています。

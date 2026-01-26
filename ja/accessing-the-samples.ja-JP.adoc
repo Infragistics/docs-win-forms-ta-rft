@@ -1,0 +1,29 @@
+﻿////
+
+|metadata|
+{
+    "name": "accessing-the-samples",
+    "controlName": [],
+    "tags": [],
+    "guid": "{143620D0-611D-40C9-AE5D-0147B1D68EED}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= サンプルへのアクセス
+
+{ProductName} (Rational Functional Tester) のサンプル スクリプトは、Samples フォルダーにインストールされます。
+
+*Windows 10 のディレクトリ*
+
+C:\Users\Public\Documents\Infragistics\20{ProductVersion}\WinForms Test Automation (IBM)\Samples
+
+*古い OS を使用している場合、サンプルはルートの「Users」フォルダーから始まる同様の場所にあります。* 
+
+サンプル スクリプトは、Java と VB.NET のバージョンがあり、いずれも同じサンプル アプリケーションに対して実行できます。
+
+各スクリプトは、実行前に同じアプリケーションを自動的にロードするように設定されます。
+
+製品の Start Menu のショートカットからサンプル スクリプトを開き、実行することができます。

@@ -1,0 +1,30 @@
+﻿////
+
+|metadata|
+{
+    "name": "test-automation-for-infragistics-controls",
+    "controlName": [],
+    "tags": [],
+    "guid": "3827be8d-b227-418d-bc9d-1f1055a45542",  
+    "buildFlags": [],
+    "createdOn": "2014-04-10T21:07:06.608426Z"
+}
+|metadata|
+////
+
+= Infragistics コントロールのテスト オートメーション
+
+=== はじめに
+
+以下のトピックは Infragistics® Windows Forms コントロールの Test Automation for IBM ( _Rational Functional Tester_ ) について説明します。
+
+=== トピック
+
+[options="header", cols="a,a"]
+|====
+|トピック|目的
+
+| link:winpivotgrid.html[WinPivotGrid]
+|このグループのトピックは、 _WinPivotGrid_ ™ コントロールの link:infragistics.rft.nettestobjects~infragistics.rft.nettestobjects.ultrapivotgridtestobject.html[UltraPivotGridTestObject] およびそれを Infragistics® {ProductName} ( _Rational Functional Tester_ ) で使用する方法について説明します。
+
+|====

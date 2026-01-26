@@ -1,0 +1,28 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2012-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "e3ddf245-1b8b-4f01-8310-83fbb53f4a6d",  
+    "buildFlags": [],
+    "createdOn": "2012-05-16T14:56:35.1504523Z"
+}
+|metadata|
+////
+
+= What's New in 2012 Volume 1
+
+*Overview*
+
+The {ProductName} (Rational Functional Tester) 2012 volume 1 release supports testing functionality across the suite of Ultimate UI for Windows Forms 2012 volume 1 controls.
+
+*WinGrid Empty Message Verification Point*
+
+A new *_Empty Messages_* verification point has been added to allow the tester to verify the different types of empty messages displayed within the grid, based on the empty message feature settings of the grid. The new verification point will include the following information:
+
+* MessageType, for each of these types  _{NoDataSourceMessage, NoRowsInDataSourceMessage, NoVisibleRowsMessage}_ 
+* MessageEnabled
+* MessageText
+

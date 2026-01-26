@@ -1,0 +1,52 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2010-volume-3",
+    "controlName": [],
+    "tags": [],
+    "guid": "518b8ae2-9d7c-4849-a804-78697cec982a",  
+    "buildFlags": [],
+    "createdOn": "2010-10-20T15:32:41.1052657Z"
+}
+|metadata|
+////
+
+= 2010 Volume 3 の新機能
+
+{ProductName} (Rational Functional Tester) 2010.3 リリースには、WinToolbarsManager コンポーネントに追加された新機能に対するオートメーション テストがサポートされています。また、10.3 リリース以降、Infragistics は Infragistics バージョンフリー アセンブリを使用して構築されたテスト アプリケーションをサポートします。
+
+== WinToolbarsManager
+
+UltraToolbarsDockAreaProxy では、Office 2010 Ribbon のオートメーション テストや 2010 のアプリケーション メニューのサポートが変更されました。
+
+* 新しいサブ項目の AtLocation(“RibbonPinButton”) が、リボンのピンボタンに追加されています。
+
+リボンのピンボタンをクリックすると、次のように記録されます。
+
+_TAForm_Toolbars_Dock_Area_Top().Click(AtLocation("RibbonPinButton"))
+
+* 既存のサブ項目の AtLocation(“ApplicationMenuButton”) は、ApplicationMenu2010 のボタンを補助する機能が拡張されました。ただし、アプリケーション メニューのクリックで記録されるアクションは、ScenicRibbon、Default または Office2010 などのアプリケーション メニューのボタンに適用したスタイルにかかわらず、変わることはありません。
+
+アプリケーション メニューのボタンをクリックすると、次のように記録されます。
+
+_TAForm_Toolbars_Dock_Area_Top().Click(AtLocation("ApplicationMenuButton"))
+
+* ApplicationMenu2010 の [ツール] をクリックすると、「Backstage」と呼ばれるルート位置のツール パスとして記録されます。
+
+_Dock_Area_Top().Click(AtPath("[Backstage]$$->$$StateButtonTool1"))
+
+_Dock_Area_Top().Click(AtPath("[Backstage]$$->$$PopupMenuTool3$$->$$ButtonTool6"))
+
+Application Menu 2010 が表示されている場合のみ利用できる、新しい確認ポイントの リボン アプリケーション メニュー 2010 が追加されました。
+
+[NOTE]
+====
+*注:* 一部のツールのプロパティは、UltraToolbarsManager のスタイルによって異なる場合があります。リボン アプリケーション メニュー 2010 の確認ポイントが、Office2010 スタイルの Ribbon に記録され、WindowsVista のスタイルで再生された場合は、一部のツール (Label Tool、StateButton Tool、Button Tool など) 間で Height Resolved 値と Width Resolved 値が異なるため、確認ポイントがエラーになります。この確認ポイントを ApplicationMenu を表示しないリボンで再生、またはデフォルト (標準) のアプリケーション メニューを表示するリボンで再生した場合、スクリプトは「UnsupportedActionException」をスローします。
+====
+
+既存の リボン階層 と Ribbon Items プロパティの確認ポイントには、設定時の ApplicationMenu または ApplicationMenu2010 が含まれます。リボン アプリケーション メニュー の確認ポイントは、デフォルトの ApplicationMenu が表示されている時のみ利用できます。
+
+== バージョンフリーの Test Automation アセンブリ名
+
+2010 Volume 3 リリース以降、Infragistics は、Ultimate UI for Windows Forms のバージョンフリー アセンブリと互換性のあるバージョンフリー Windows Forms Test Automation アセンブリを提供しています。これらのアセンブリは、Infragistics バージョンフリー アセンブリで構築されたアプリケーションをテストする場合に必要です。アセンブリの使用方法の詳細は、「 link:version-free-assembly-names.html[バージョンフリー アセンブリ名]」のトピックを参照してください。

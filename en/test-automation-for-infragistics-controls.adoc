@@ -1,0 +1,25 @@
+﻿////
+
+|metadata|
+{
+    "name": "test-automation-for-infragistics-controls",
+    "controlName": [],
+    "tags": [],
+    "guid": "3827be8d-b227-418d-bc9d-1f1055a45542",  
+    "buildFlags": [],
+    "createdOn": "2014-04-10T21:07:06.608426Z"
+}
+|metadata|
+////
+
+= Test Automation for Infragistics Controls
+
+=== Introduction
+
+The information you need about Test Automation for IBM ( _Rational Functional Tester_ ) of the Infragistics® Windows Forms controls is covered in the following topic.
+
+=== Topics
+
+link:wincarousel.html[WinCarousel]
+
+link:winpivotgrid.html[WinPivotGrid]

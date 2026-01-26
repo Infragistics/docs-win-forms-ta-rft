@@ -1,0 +1,123 @@
+﻿////
+
+|metadata|
+{
+    "name": "known-issues",
+    "controlName": [],
+    "tags": [],
+    "guid": "{5E1E930D-B24D-46C1-A617-0DAF6009359F}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Known Issues
+
+*Known Issue with Replaying VB.NET Sample Script in RFT version 8.1.1.3 and above*
+
+With RFT versions 8.1.1.3 and above, the sample script installed with Windows Forms Test Automation (IBM) will not replay. This is because the sample script is built against an older version of RFT. In RFT 8.1.1.3 the format for object recognition is changed. But the sample script is not modified so that they are playable on older version. As a workaround for this limitation, please follow these steps:
+
+[start=1]
+. Open the object map for the failing script
+[start=2]
+. Select the test object that RFT is not able to find
+[start=3]
+. Right click the test object and select “Highlight” from the context menu. You will notice that the object cannot be found.
+[start=4]
+. Right click on the test object again and select “Update Recognition Properties” and follow the onscreen instructions.
+[start=5]
+. Save the object map and now you can play back your script without issues.
+
+*Known Issue with Replaying VB.NET Script in RFT Version 8.1.1.1*
+
+While replaying VB.NET script in RFT version 8.1.1.1, a System.IO.FileNotFoundException is thrown. IBM has a fix for this issue which will be released shortly.
+
+*Note:* This issue exists only for VB.NET script. Java script works fine.
+
+*Known Issue and Limitation of the Installer*
+
+When using the installer to install {ProductName} (Rational Functional Tester) on WinServer 2003, an error will be thrown asking if you wish to debug. Click No. The installer will continue to install {ProductName} (Rational Functional Tester) on to your machine correctly.
+
+*Known Issue with Restyled Run Time Dialogs*
+
+Due to the restyling of the Run Time Dialogs, you should expect scripts recorded against the following dialogs with previous versions (10.1 or earlier) may need to be re-recorded.
+
+* WinGrid
+
+** Summary
+** CustomFilter
+
+* Toolbars
+
+** Customize
+** Customize Keyboard
+** New Toolbar
+** Rearrange Command
+** Add Command
+
+* PrintPreviewDialog
+
+** Generating Previews
+
+*Known Issue with WinGanttView*
+
+Any previously recorded scripts against 10.1 with Data Verification Points including Duration needs to be recorded in 10.2.
+
+*Known Issue and Limitation of WinGrid*
+
+====== Conditional Formatting Dialog
+
+When recording actions on the new conditional formatting dialog, if the script includes interacting with the Formula Builder dialog there is a known conflict issue. RFT considers the OK buttons on the Formula Builder dialog and the Add Condition/Appearance Mappings dialog as one object and throws an error at the end of recording. As a workaround for this limitation follow these steps:
+
+[start=1]
+. Stop recording after interacting with the first OK button
+[start=2]
+. Rename the “OKButton” test object in the object map to any other valid name
+[start=3]
+. Continue recording and the next OK button will take the test object name “OKButton”
+
+*Known Issue and Limitation of WinListView*
+
+When editing a ListItem, if you double-click the item to enter edit mode, you must do either of the following in order to edit the text:
+
+* Hard code a "sleep(1)" after the double-click action, and before the text is modified.
+* Add a datapool to the embeddable editor to do the text editing on the internal editor.
+
+*Known Issue and Limitation of WinPanel*
+
+Within WinPanel, the replay of the clicking action on an area of a control that is not fully visible will throw a replay exception. In order to avoid the exception, the script should include an action that scroll the area of the control to be clicked, into view. For example, if the first cell on a Grid is outside the scrolled area of the WinPanel, a click action on that cell will not replay unless it was preceded by a click on the appropriate scroll button that brings this cell into view.
+
+*Known Issue and Limitation of WinSchedule*
+
+When dragging an appointment, if the path to the destination involves scrolling the control then you should replace the Drag action with a MoveAppointment action. This is due to a control behavior which prevents the glass replay of the drag action.
+
+*Known Issue and Limitation of WinTilePanel*
+
+* When a tile is dragged from one position to another, the UltraTilePanel changes the position of tiles as the mouse pointer moves over the tiles. These changes will not be recorded as Rational Functional Tester framework does not support mouse hovering while dragging. So during replay, the position of the tiles that got moved will not be the same. Only the dragged tile will move to the same position as it did during the record time. All intermediate tile movements will not be the same.
+
+*Known Issues and Limitations of WinTimeLineView*
+
+* When you need to bring an Appointment or TimeSlot sub item into view the sub item will be brought in and placed to the left edge of the control.
+* *Scrolling while dragging:* Even though the timeline proxy tries to perform the drag action when the source and the target do not fit on the screen, the action will not replay properly. This is a limitation in some of Infragistics controls and is caused by the Rational Functional Tester framework. To work around this limitation, consider the following example: If the test require selecting time range that cannot fit on the screen then instead of dragging the mouse pointer from source to destination you can click the first TimeSlot, scroll using the mouse wheel then Shift+Click the last TimeSlot in the range.
+* Dragging the owner header edge to change the number of owners in view may not replay correctly. The user can replace the drag action with the following statement to do the same:
+
+----
+'Set the number of Owners in view to 3
+UltraTimelineView1Calendar().SetNAProperty("MaximumOwnersInView", 3)
+'Set the number of Owners in view to 2
+UltraTimelineView1Calendar().SetNAProperty("MaximumOwnersInView", 2)
+----
+
+* In Some cases, the replay of a drag action to select multiple timeslots will not make the right selection. If you run into such a case you should Use the Click then Shift+Click to select a range of timeslots.
+
+----
+'Click the Start timeslot
+UltraTimelineView1Calendar().Click(AtList(AtLocation("TimeSlot"), AtDate(10, 20, 2009), _
+AtText("Time:00:15:00"), AtText("Owner2")))
+'Shift + Click the end time slot to make a range selection
+UltraTimelineView1Calendar().Click(SHIFT_LEFT, AtList(AtLocation("TimeSlot"), AtDate(10, 20, 2009), _ 
+AtText("Time:02:30:00"),AtText("Owner2")))
+----
+
+* Copying appointment (CTRL + Drag) will record properly for the Timeline view but upon replay it will move the appointment instead of copying it.

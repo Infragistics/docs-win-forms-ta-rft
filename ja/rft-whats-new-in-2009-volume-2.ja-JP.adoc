@@ -1,0 +1,53 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2009-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "{6DEE43EC-6689-4871-94E6-DD63DAD0CF3A}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= 2009 Volume 2 の新機能
+
+{ProductName} (Rational Functional Tester) 2009.2 リリースでは、以下の新しい Ultimate UI for Windows Forms コントロールのサポートが改善されています。
+
+== WinTimelineView
+
+WinSchedule に追加された新しい WinTimelineView コントロールのオートメーション テストをサポートするために、新しい UltraTimelineViewProxy が追加されました。このプロキシは、スクロールバーをクリックした場合の AtLocation、ユーザーが時間帯、予定、休日、オーナー ヘッダー、列ヘッダーをクリックした場合の AtList、追加のタイム ライン列ヘッダーにあるナビゲーション ボタンをクリックした場合の AtButton のようなサブ項目をサポートします。
+
+通常のすべての確認ポイントのサポートに加え、この新しいプロキシでは、すでに WinSchedule プロキシで親しみのある確認ポイントを含め以下をサポートします。
+
+* アクティブなオーナー (OwnerGroupingStyle がマージされていない場合)
+* タイムライン間隔 (プライマリ間隔および追加間隔に関する情報を含む)
+* 予定
+* 休日
+* オーナー
+* 選択した予定
+* 選択した休日
+* 選択した範囲 (プライマリ間隔の開始日時と終了日時)
+* 表示範囲 (プライマリ間隔の開始日時と終了日時)
+
+UltraTimelineViewProxy は、標準の Click、DoubleClick、NClick、Drag の各アクションをサポートします。
+
+== WinTilePanel
+
+新しい WinTilePanel コンテナーのオートメーション テストをサポートするために、新しいプロキシとテスト オブジェクトが作成されました。最初のプロキシはパネルを表示する UltraTilePanelProxy で、2 番目のプロキシは個別のタイルを独立したコントロールとして処理する UltraTileProxy です。これらのプロキシから、操作のテスト、記録、再生ができます。
+
+====== UltraTilePanelProxy
+
+新しいタイル パネル プロキシは、スクロールバーをクリックした場合の AtLocation、およびタイルによって補助されないクライアント領域内をクリックした場合の AtPoint を含むサブ項目をサポートします。標準の Click、DoubleClick、NClick、Drag の各アクションがサポートされます。標準の 項目プロパティとテキスト確認ポイントに加え、UltraTilePanelProxy は、タイル パネルの子タイルとその重要なプロパティを示すテーブルをタイル確認ポイントとしてサポートしています。
+
+====== UltraTileProxy
+
+新しいタイル プロキシは、タイルのヘッダー キャプション領域をクリックした場合の AtLocation(“Header”)、タイル上で状態変更ボタンと閉じるボタンをクリックした場合の AtButton、タイルのクライアント領域でその他のクリックを実行した場合の AtPoint (タイルのクライアント領域が他のコントロールにバインドされている場合、すべての操作はそのコントロールの外で記録されます) を含むサブ項目をサポートします。
+
+標準の 項目プロパティ確認ポイントに、TileSettings プロパティの値をリストする子ノードがあります。UltraTileProxy は、テキスト確認プロパティと、標準の Click、DoubleClick、NClick、Drag の各アクションもサポートします。
+
+== WinControlContainerEditor
+
+新しい ControlContainerEditor の記録、再生、確認のサポートが追加されました。コンポーネント内部に埋め込まれたコントロールとホストする複数のコントロールをサポートします。(たとえば、コントロール コンテナー内部のエディターまたはボタンによる操作は、エディターおよびボタンの外で記録および再生されます)。

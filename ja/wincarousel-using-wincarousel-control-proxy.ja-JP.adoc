@@ -1,0 +1,257 @@
+﻿////
+
+|metadata|
+{
+    "name": "wincarousel-using-wincarousel-control-proxy",
+    "controlName": [],
+    "tags": [],
+    "guid": "6ab02b44-13bd-433e-a515-c14b361ad5d8",  
+    "buildFlags": [],
+    "createdOn": "2014-10-01T16:39:58.3729574Z"
+}
+|metadata|
+////
+
+= WinCarousel コントロール プロキシの使用
+
+=== 目的
+
+このトピックは、 link:infragistics.rft.nettestobjects~infragistics.rft.nettestobjects.ultracarouseltestobject.html[UltraCarouselTestObject] オブジェクトによって表される  _WinCarousel_ ™ コントロール プロキシの SubItems、独立した確認ポイント、および動作について説明します。
+
+=== このトピックの内容
+
+このトピックは、以下のセクションで構成されます。
+
+* <<_Ref384651958,SubItems>>
+
+** <<_Ref399770670,カルーセル項目の識別>>
+** <<_Ref384651973,Button サブ項目>>
+** <<_Ref384651981,Text サブ項目>>
+** <<_Ref384651988,Name サブ項目>>
+** <<_Ref384651998,Position サブ項目>>
+** <<_Ref399770724,Index サブ項目>>
+
+* <<_Ref384396381,確認ポイント>>
+* <<_Ref399770757,テーブル コンテンツ>>
+* <<_Ref399840486,VisibleCarouselItem>>
+* <<_Ref399770824,AllCarouselItems>>
+
+[[_Ref384651958]]
+== SubItems
+
+[[_Ref399770670]]
+
+=== カルーセル項目の識別
+
+カルーセル項目は  _Text_  、 _Name_  、 _Position_  、および  _Index_   によって識別されます。カルーセル項目のレコーディングの優先は:
+
+1. _Text_   (空以外の場合)
+
+2. _Name_   (空以外の場合)
+
+3. _Position_  .カルーセル ボタンが表示されない場合、Position の代わりに  _Index_   によって識別し記録されます。
+
+.注:
+[NOTE]
+====
+マウス ホイールでスクロールすることはサポートされません。 _Position_   を使用すると、項目はビューにスクロールされません。
+====
+
+[[_Ref384651973]]
+
+=== Button サブ項目
+
+カルーセル コントロールでパスに項目をスクロールするボタンは 6 つあります。各ボタンは `AtButton` `(“[button name]”)` として識別されます。
+
+[options="header", cols="a,a"]
+|====
+|ボタン タイプ|説明
+
+|
+[start=1] 
+
+. スクロール ボタン 
+
+|記録: `AtButton``("``FirstItem``")`
+
+|
+[start=2] 
+
+. スクロール ボタン 
+
+|記録: `AtButton``("``PreviousPage``")`
+
+|
+[start=3] 
+
+. スクロール ボタン 
+
+|記録: `AtButton``("``PreviousItem``")`
+
+|
+[start=4] 
+
+. スクロール ボタン 
+
+|記録: `AtButton``("``NextItem``")`
+
+|
+[start=5] 
+
+. スクロール ボタン 
+
+|記録: `AtButton``("``NextPage``")`
+
+|
+[start=6] 
+
+. スクロール ボタン 
+
+|記録: `AtButton``("``LastItem``")`
+
+|====
+
+image::images/Using_WinCarousel_Control_Proxy_1.png[]
+
+[[_Ref384651981]]
+
+=== Text サブ項目
+
+_Text_   サブ項目はカルーセル項目の `Text` プロパティを参照します。指定した場合、カルーセル項目の表示テキストです。 _CarouselItem_   の 2 つ以上のインスタンスが表示される場合、パスの最初の項目と動作します。項目が表示されていない場合、項目をビューにスクロールします。
+
+`Carousel1ComboListBox().Click(``AtText``("Item1"))`
+
+`Carousel1ComboListBox().Click(``AtText``("Item1", 1)) ' Item1 の第 2 のインスタンスをクリックします`
+
+[[_Ref384651988]]
+
+=== Name サブ項目
+
+_Name_   サブ項目は、設定する必要がないため値が null の場合に重複を含むことのある、カルーセル項目の `Key` プロパティを参照します。 _CarouselItem_   の 2 つ以上のインスタンスが表示される場合、パスの最初の項目と操作します。項目が表示されていない場合、項目をビューにスクロールします。
+
+`Carousel1ComboListBox().Click(``AtName``("Key1"))`
+
+`Carousel1ComboListBox().Click(``AtName``("", 1)) 「空のキーで 2 つ目のインスタンスをクリックします。」`
+
+[[_Ref384651998]]
+
+=== Position サブ項目
+
+_Position_   サブ項目はパスに表示されるカルーセル項目の位置を参照します。 `ItemInfo.Position` プロパティで並べ替えされる、カルーセルの表示済みの `UIElement` 項目に基づいたゼロを基本としたインデックスです。 `ItemInfo.Position` プロパティはパスでの位置を指定する、`UIElement` の内部プロパティです。パスの数ヶ所で表示されるカルーセルの特定のインスタンスをクリックする場合にも使用します。
+
+`Carousel1ComboListBox().Click(``AtPosition``(3))`
+
+[[_Ref399770724]]
+
+=== Index サブ項目
+
+_Index_   サブ項目は項目コレクションにおけるカルーセル項目のゼロを基本としたインデックスを参照します。 _CarouselItem_   の 2 つ以上のインスタンスが表示される場合、パスの最初の項目と操作します。項目が表示されていない場合、項目をビューにスクロールします。
+
+`Carousel1ComboListBox().Click(``AtIndex``(0))`
+
+[[_Ref384396381]]
+== 確認ポイント
+
+[[_Ref399770757]]
+
+=== テーブル コンテンツ
+
+_Verification Point_   は `VisibleCarouselItem` および `AllCarouselItems` プロパティを使用しているすべての、または現在表示済みのカルーセル項目のデータ表を返します。
+
+[[_Ref399840486]]
+
+=== VisibleCarouselItem
+
+現在表示済みのカルーセル項目のデータ表を返します。返されたデータは以下のプロパティから構成されます:
+
+[options="header", cols="a,a,a"]
+|====
+|プロパティ|説明|タイプ
+
+| _Alpha_ 
+|カルーセル項目のアルファ レベルを表します。
+|Integer
+
+| _Decimal_ 
+|カルーセル項目の元のサイズのパーセンテージのスケールを表します。
+|Decimal
+
+| _IsActive_ 
+|項目が現在アクティブの項目であるかどうかを示します。
+|Boolean
+
+| _IsSelected_ 
+|項目が選択済みの項目であるかどうかを示します。
+|Boolean
+
+| _Name_ 
+|_Name_ サブ項目で定義可能なカルーセル項目の `Key` プロパティ。
+|String
+
+| _NameInstance_ 
+|Name がすべてのカルーセル項目のコレクションに表示されるインスタンスの指数を示します。
+|Integer
+
+| _Scale_ 
+|カルーセル項目の元のサイズのスケール (パーセンテージ) を表します。
+|Decimal
+
+| _Position_ 
+|カルーセル項目の表示済みの位置、ゼロを基本としたインデックス。 
+
+項目が非表示の場合、-1 を返します。
+|Integer
+
+| _Rect_ 
+|相対的座標を表すカルーセル項目の長方形。
+|Rect
+
+| _Text_ 
+|_Text_ サブ項目で特定可能なカルーセル項目の `Text` プロパティ。
+|String
+
+|====
+
+[[_Ref399770824]]
+
+=== AllCarouselItems
+
+すべてののカルーセル項目のデータ表を返します。返されたデータは以下のプロパティから構成されます:
+
+[options="header", cols="a,a,a"]
+|====
+|プロパティ|説明|タイプ
+
+| _Index_ 
+|カルーセル項目の表示済みの位置、ゼロを基本としたインデックス。
+|Integer
+
+| _IsActive_ 
+|項目が現在アクティブの項目であるかどうかを示します。
+|Boolean
+
+| _IsVisible_ 
+|項目が現在表示されているかどうかを示します。
+|Boolean
+
+| _Name_ 
+|_Name_ サブ項目で定義可能なカルーセル項目の `Key` プロパティ。
+|String
+
+| _NameInstance_ 
+|Name がすべてのカルーセル項目のコレクションに表示されるインスタンスの指数を示します。
+|Integer
+
+| _Position_ 
+|カルーセル項目の表示済みの位置、ゼロを基本としたインデックス。項目が非表示の場合、-1 を返します。
+|Integer
+
+| _Text_ 
+|_Text_ サブ項目で特定可能なカルーセル項目の `Text` プロパティ。
+|String
+
+| _TextInstance_ 
+|Text がすべてのカルーセル項目のコレクションに表示されるインスタンスの指数を示します。
+|Integer
+
+|====

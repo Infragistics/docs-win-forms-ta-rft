@@ -1,0 +1,32 @@
+﻿////
+
+|metadata|
+{
+    "name": "wincarousel",
+    "controlName": [],
+    "tags": [],
+    "guid": "fe6e9ada-4ada-4860-9289-4a9f57bf91e6",  
+    "buildFlags": [],
+    "createdOn": "2014-10-01T16:39:33.3055236Z"
+}
+|metadata|
+////
+
+= WinCarousel
+
+=== Introduction
+
+The topics in this group explain the subitems, independent verification points, and behavior of the  _WinCarousel_™ control proxy represented by the link:infragistics.rft.nettestobjects~infragistics.rft.nettestobjects.ultracarouseltestobject.html[UltraCarouselTestObject] object.
+
+image::images/WinCarousel_1.png[]
+
+=== Topics
+
+[options="header", cols="a,a"]
+|====
+|Topic|Purpose
+
+| link:wincarousel-using-wincarousel-control-proxy.html[Using WinCarousel Control Proxy]
+|This topic provides an overview about recording and replaying actions, with corresponding subitems and behaviors of the _WinCarousel_ control.
+
+|====

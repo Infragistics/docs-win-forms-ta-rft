@@ -1,0 +1,22 @@
+﻿////
+
+|metadata|
+{
+    "name": "using-windows-forms-test-automation",
+    "controlName": [],
+    "tags": [],
+    "guid": "{BD2B49A5-84DA-4257-9DA5-214F72AE0EDD}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Windows Forms Test Automation の使用
+
+Windows Forms Test Automation を使用したテストの作成、修正、保存、実行方法については、以下のリンクをクリックしてください。また、より正確なテストに必要な確認ポイントとデータ駆動型操作の使用方法についての情報もあります。
+
+* link:creating-a-test.html[テストの作成]
+* link:recording-a-test.html[テストの記録]
+* link:replayng-a-test.html[テストの再生]
+* link:using-the-version-utility.html[バージョン ユーティリティの使用]

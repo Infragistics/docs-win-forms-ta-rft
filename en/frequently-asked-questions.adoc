@@ -1,0 +1,49 @@
+﻿////
+
+|metadata|
+{
+    "name": "frequently-asked-questions",
+    "controlName": [],
+    "tags": [],
+    "guid": "{A9544DC6-DEA0-4634-A1A1-C685B77F0A9F}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Frequently Asked Questions
+
+We've provided you with a list of answers to frequently asked questions about the {ProductName} (Rational Functional Tester) product, and how it works with the Ultimate UI for Windows Forms product:
+
+== Which versions of Ultimate UI for Windows Forms does {ProductVersion} work with?
+
+Currently, each volume release of {ProductName} (Rational Functional Tester) maps directly to the corresponding release of Ultimate UI for Windows Forms. Therefore {ProductVersion} (CLR 4.0) is supported to work only with Ultimate UI for Windows Forms {ProductVersion} (CLR 4.0).
+
+== Which version of IBM Rational Functional Tester is supported by {ProductVersion}?
+
+{ProductVersion} (CLR 4.0) supports Rational Functional Tester V8.1.1.3 and higher.
+
+== If I apply a Ultimate UI for Windows Forms hotfix, will this break existing {ProductName} (Rational Functional Tester) functionality?
+
+No, {ProductName} (Rational Functional Tester) will work regardless of the hotfixes applied.
+
+== Will saved Rational Functional Tester tests work with later versions of {ProductName} (Rational Functional Tester)?
+
+Yes, each version of {ProductName} (Rational Functional Tester) will be backward-compatible. If there is a need to break backward compatibility in order to support additional functionality, the changes will be documented and made available to you.
+
+== How do I run multiple versions of {ProductName} (Rational Functional Tester)?
+
+The {ProductName} (Rational Functional Tester) Version Utility allows you to run multiple versions of the product.
+
+== Why do the actions in the test script get recorded as "Click(AtPoint( x,y)", where x and y are the coordinates of the point clicked?
+
+There is a problem with the {ProductName} (Rational Functional Tester) installation. This usually means that the required assemblies and configuration files do not exist in the correct folder or are not loaded by Rational Functional Tester. Make sure that the {ProductName} (Rational Functional Tester) assemblies and configuration files are placed in the Customization folder of Rational Functional Tester, then restart any process that references the Rational Functional Tester assembly (rtxFtNet.dll).
+
+== Does {ProductName} (Rational Functional Tester) support recording and replaying on elements that inherit (or are sub-classed) from Ultimate UI for Windows Forms controls?
+
+Yes, {ProductName} (Rational Functional Tester) will record and replay actions on sub-classed Ultimate UI for Windows Forms controls. It will record all the actions inherited from the Ultimate UI for Windows Forms control. However, it will not record any new events/actions that were added by the customization of the Ultimate UI for Windows Forms (even though the user can add some script to force new events to get fired).
+
+== How can I switch between testing applications running under different versions of the Common Language Runtime (CLR)?
+
+You can switch between CLR versions of {ProductName} (Rational Functional Tester) using the Windows Forms Test Automation' link:using-the-version-utility.html[Version Utility].

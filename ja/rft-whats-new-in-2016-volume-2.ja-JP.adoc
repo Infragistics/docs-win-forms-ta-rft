@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2016-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "288499ef-9843-4e68-b97b-83f282613cfc",  
+    "buildFlags": [],
+    "createdOn": "2012-10-11T12:59:31.2423494Z"
+}
+|metadata|
+////
+
+= 2016 Volume 2 の新機能
+
+== Ultimate UI for Windows Forms 2016 Volume 2 のサポート
+
+=== Windows Forms のすべてのコントロール
+
+{ProductName} (Rational Functional Tester) 2016 volume 2 は、Ultimate UI for Windows Forms 2016 volume 2 コントロール全般のテスト機能をサポートします。

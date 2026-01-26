@@ -1,0 +1,59 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2010-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "8738f765-6638-4ab5-b5d8-98d61f13b8d7",  
+    "buildFlags": [],
+    "createdOn": "2010-07-07T20:51:43.8877093Z"
+}
+|metadata|
+////
+
+= 2010 Volume 2 の新機能
+
+{ProductName} (Rational Functional Tester) 2010.2 リリースでは、以下の Ultimate UI for Windows Forms コントロールがサポートされています。
+
+== WinEditors
+
+2010 Volume 2 リリースで WinEditors に追加された新しい TimeSpan エディターの自動 UI テストをサポートするために、新しいプロキシとテスト オブジェクトが追加されました。Infragistics のすべてのプロキシでサポートされる GetNAProperty および SetNAProperty、標準の Click と Drag の各アクション、および 項目プロパティ確認ポイントに加え、UltraTimeSpanEditorProxy は、以下のサブ項目もサポートします。
+
+* SCROLL_UPBUTTON、SCROLL_DOWNBUTTON - TimeSpan エディターのデフォルト スピン ボタンでの操作を記録します。
+* AtButton(…) - ボタンを識別する位置と一緒に EditorButtonBase のクリックを記録します。
+* AtPoint(…) - TimeSpan エディターのボタンの外部がクリックされたことを記録します。
+
+== WinFormManager
+
+2010 Volume 2 リリースで導入された新しい WinFormManager コンポーネントの自動 UI テストをサポートするために、UltraFormDockAreaProxy と命名された新しいプロキシと、新しいテスト オブジェクトの UltraFormDockAreaTestObject が追加されました。このテスト オブジェクトは、.NET Forms の境界線とキャプションのビジュアル外観の操作で WinFormManager が使用するドック領域コントロールを管理します。
+
+Infragistics のすべてのプロキシによりサポートされる GetNAProperty および SetNAProperty に加え、UltraFormDockAreaProxy は以下のサブ項目をサポートします。
+
+* AtList(…) - 子フォームが最大化されている場合に、ネストされた子フォーム上のサブ項目を表します。
+* AtLocation(…) - フォームに対して特別な意味を持つ以下の場所を記録します。
+
+** RESTORE_BUTTON
+** CHILD_FORM
+** CLOSE_BUTTON
+** CONTEXTHELP_BUTTON
+** MAXIMIZE_BUTTON
+** MINIMIZE_BUTTON
+** SYSTEM_BUTTON
+** CAPTION
+
+* AtPoint(…) - 未定義の場所でのクリックを記録します。場所は、前述の文字列の 1 つまたは以下に定義する定数の １ つのいずれかです。
+
+標準の Click と Drag の各アクションに加え、このプロキシはさらに Move と Resize の 2 つのアクションも処理します。Move アクションは、フォームのキャプション領域でドラッグ操作が開始された場合に発生します。Resize アクションは、フォームのサイズを変更する場合のように、フォームの端でドラッグ操作が開始された場合に発生します。
+
+WinFormManager のテストに使用する、以下の確認ポイントもサポートされています。
+
+* テキスト
+* 項目プロパティ
+* FormStyleSettings
+
+== DropDown コントロール
+
+Ultimate UI for Windows Forms 2010 Volume 2 のコントロールでは、コーナーのサイズ変更ハンドルをドラッグして、WinComboEditor、WinCombo、WinDropDown、WinPopupControlContainer のドロップダウン領域のサイズを変更できる機能が追加されました。また、DropDownResizeControlProxy を使用したスクリプトで、自動的にこの機能のユーザー インターフェイスをテストする方法と DragToScreenPoint アクションのようにサイズ変更ハンドルのドラッグを記録する関連テスト オブジェクトも、新たにサポートしています。
+
+DropDownResizeControlProxy は標準の Click と Drag の各アクションをサポートします。また、Infragistics のすべてのプロキシがサポートする GetNAProperty および SetNAProperty を継承し、項目プロパティの確認ポイントを提供しています。

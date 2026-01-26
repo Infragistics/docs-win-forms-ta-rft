@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "known-issues-of-the-winschedule",
+    "controlName": [],
+    "tags": [],
+    "guid": "{B2515CA6-8834-44E4-A63E-D7BEF30BF0B9}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Known Issues of the WinSchedule
+
+This topic describes a known issue related to the WinSchedule™ control that we became aware of during the development cycle.
+
+== Dragging an Appointment
+
+When dragging an appointment or holiday, if the path to the destination involves scrolling the control then you should replace the Drag action with a MoveAppointment action. This is due to a control behavior which prevents the glass replay of the drag action.

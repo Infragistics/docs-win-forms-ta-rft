@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2008-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "{80EC4F0C-2437-492F-AE2D-88B634B16FC1}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= What's New in 2008 Volume 2
+
+The {ProductName} (Rational Functional Tester) 2008 Volume 2 release includes improved support for the following Ultimate UI for Windows Forms control.
+
+== WinGrid™
+
+* We have added support for the new RowEditTemplate grid feature. This includes displaying the template using the grid UI and record and replay actions on the GridCellProxy controls that gets displayed on the row edit template form.

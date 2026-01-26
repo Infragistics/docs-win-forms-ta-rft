@@ -1,0 +1,30 @@
+﻿////
+
+|metadata|
+{
+    "name": "winpivotgrid",
+    "controlName": [],
+    "tags": [],
+    "guid": "ff05329d-5508-4782-a101-507e2352ee7f",  
+    "buildFlags": [],
+    "createdOn": "2014-04-10T21:12:08.2403862Z"
+}
+|metadata|
+////
+
+= WinPivotGrid
+
+=== はじめに
+
+このトピックは、 link:infragistics.rft.nettestobjects~infragistics.rft.nettestobjects.ultrapivotgridtestobject.html[UltraPivotGridTestObject] オブジェクトによって表される  _WinPivotGrid_ ™ コントロール プロキシーのサブ項目、独立した確認ポイント、および動作について説明します。
+
+=== トピック
+
+[options="header", cols="a,a"]
+|====
+|トピック|目的
+
+| link:winpivotgrid-using-pivotgrid-control-proxy.html[PivotGrid コントロール プロキシーの使用]
+|このトピックは、`UltraPivotGridTestobject` によって表される _WinPivotGrid_ コントロール プロキシーの操作の記録および再生、対応するサブ項目や動作の概要を提供します。
+
+|====

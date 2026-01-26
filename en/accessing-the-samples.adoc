@@ -1,0 +1,28 @@
+﻿////
+|metadata|
+{
+    "name": "accessing-the-samples",
+    "controlName": [],
+    "tags": [],
+    "guid": "{143620D0-611D-40C9-AE5D-0147B1D68EED}",
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Accessing the Samples
+
+{ProductName} (Rational Functional Tester) sample scripts are installed in the Samples folder.
+
+*Windows 10 Location*
+
+C:\Users\Public\Documents\Infragistics\20{ProductVersion}\WinForms Test Automation (IBM)\Samples
+
+*Samples will be found in a similar location starting at the root "Users" folder when using an older OS.* 
+
+There is a Java and VB.NET version of the sample script. both run against the same sample application.
+
+Each script is set up to automatically load the sample application prior to running.
+
+You can open and run the sample script from the Start Menu shortcuts of the product.

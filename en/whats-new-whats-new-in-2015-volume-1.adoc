@@ -1,0 +1,66 @@
+﻿////
+
+|metadata|
+{
+    "name": "whats-new-whats-new-in-2015-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "e3e0019b-bc79-421a-ba3e-853a97b882f0",  
+    "buildFlags": [],
+    "createdOn": "2015-04-01T18:56:33.2197745Z"
+}
+|metadata|
+////
+
+= What's New in 2015 Volume 1
+
+== Topic Overview
+
+=== Purpose
+
+This topic presents control proxies of the new and enhanced features for the Infragistics® Test Automation for IBM ( _Rational Functional Tester_  ) for 2015 Volume 1 release.
+
+== What’s New Summary
+
+=== What’s new summary chart
+
+The following table summarizes what’s new in 2015 Volume 1.
+
+==== WinGrid
+
+[options="header", cols="a,a"]
+|====
+|Feature|Description
+
+|ColumnChooser MultiSelect
+|New to the UltraWinGrid is the ability to select multiple columns in the UltraGrid’s column chooser dialog.
+
+|====
+
+==== Print Preview Dialog
+
+[options="header", cols="a,a"]
+|====
+|Feature|Description
+
+|Select Printer Button
+|New to the Print Preview dialog, is the Select Printer button. Which opens up the Windows printer setup dialog. 
+
+image::images/Whats_New_in_2015_Volume_1_1.png[]
+
+|====
+
+==== Common Features
+
+[options="header", cols="a,a"]
+|====
+|Feature|Description
+
+|Right-to-Left support
+|In addition to the previous (2014.1-2014.2) releases, this enhances another control to support right-to-left mode. 
+
+==== Support Control: 
+
+* WinExplorerBar 
+
+|====

@@ -1,0 +1,25 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new",
+    "controlName": [],
+    "tags": [],
+    "guid": "{60A30352-C007-4F68-8D58-2C02F212B57E}",  
+    "buildFlags": [],
+    "createdOn": "2008-12-05T13:31:20Z"
+}
+|metadata|
+////
+
+= What's New
+
+link:rft-whats-new-in-2019-volume-1.html[What's New in 2019 Volume 1]
+
+Find out which new Ultimate UI for Windows Forms controls and components are supported in this volume release of {ProductName} ( _Rational Functional Tester_ ).
+
+link:rft-whats-new-revision-history.html[Revision History]
+
+Find out if or when a particular feature was added to {ProductName} ( _Rational Functional Tester_ ).
+
+This section helps to quickly explore any new feature since our 2019 Volume 1 release.

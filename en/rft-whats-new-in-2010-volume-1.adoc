@@ -1,0 +1,41 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2010-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "{71C7EBA7-23D8-4D88-8BE5-BA3308ABB6E7}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= What's New in 2010 Volume 1
+
+The {ProductName} (Rational Functional Tester) 2010.1 release includes support for the following new Ultimate UI for Windows Forms controls.
+
+== WinSplitter™
+
+To support your automated testing of the new WinSplitter control we give you the new UltraSplitterProxy. It supports sub items like AtButton (“Toggle”) for clicking the collapse/expand button and AtPoint( … ) for clicking anywhere other than the collapse/expand button. UltraSplitterProxy supports the Standard Click and DragToScreenpoint actions. The only supported verification point for this proxy is “Item Properties “.
+
+== WinMessageBoxManager™
+
+We have created new proxy (MessageBoxControlProxy) and test object to support your automated testing for the new MessageBoxControl that gets displayed and managed by the WinMessageBoxManager component. The MessageBoxControlProxy supports sub items like AtButton([Button Text]) for clicking any MessageBox button (Yes, No, OK, Cancel, Ignore, Retry, Abort, Help), AtPoint( … ) for clicking anywhere other than Text links and buttons including clicks on image links and AtList(AtLocation(…), AtText(…)) for clicking links embedded inside the MessageBox text areas. The first sub item in the AtList sub item- (AtLocation) specifies the area where the link is embedded. It could be one of the following three options:
+
+* AtLocation(“HeaderArea”) for clicks on the header area
+* AtLocation(“ContentArea”) for clicks on the content area
+* AtLocation(“FooterArea”) for clicks on the footer area
+
+The second sub item (AtText) specifies the text associated with the link. If there are more links with the same text an indexer will be used to identify the link that receives the action. MessageBoxControlProxy supports the Standard Click and Drag actions. The only supported verification point for this proxy is “Item Properties”. The Item Properties verification point lists child nodes for MessageBoxInfo that represent multiple message box settings like different texts and buttons. It also includes nodes for the following appearance objects: Appearance, ButtonAppearance, ButonAreaAppearance, ContentAreaAppearance, HeaderAppearance and FooterAppearance.
+
+== WinActivityIndicator™
+
+The new UltraActivityIndicatorProxy has been created to support automated testing for the new WinActivityIndicator control. The only supported verification point for this proxy is “Item Properties”.
+
+== WinGanttView™
+
+For the automated testing of WinGanttView we have added the new UltraGanttViewProxy. Since the WinGanttView control includes a Grid, the UltraGanttViewProxy is derived from the UltraGridProxy. The supported verification points include Item Properties, Active Cell, Active Row, GanttView Owners, GanttView Tasks, GanttView Active Task and GanttView Active Project.
+
+The UltraGanttViewProxy supports sub items like ATLocation (“Splitter”) for performing actions on the splitter bar between the grid and the timeline sections, Scrollbar sub item for clicking on the vertical and horizontal scrollbars, Task sub item for clicking on the task bar area and for expand/collapse summary tasks, Timeslot sub item for clicking on the timeslot, Timeslot Column Header sub item for clicking on timeslot column headers and Navigation Button on Column Header sub items for clicking on the navigation buttons on column header and in addition supports the regular Grid sub items as well. Standard Clicks, drag actions and actions inherited from the Grid will be supported by this proxy.

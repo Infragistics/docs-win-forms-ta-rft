@@ -1,0 +1,28 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2007-volume-3",
+    "controlName": [],
+    "tags": [],
+    "guid": "{77BF9746-EC6D-425A-9E23-8FB7FDE81CF2}",  
+    "buildFlags": [],
+    "createdOn": "2008-06-06T10:01:44Z"
+}
+|metadata|
+////
+
+= 2007 Volume 3 の新機能
+
+{ProductName} (Rational Functional Tester) 2007 Volume 3 リリースでは、以下の Ultimate UI for Windows Forms コントロールおよびコンポーネントのサポートが改善されています。
+
+== WinToolbarsManager Navigation Toolbar
+
+* WinToolbarsManager Navigation Toolbar に対するサポートが追加されました。
+
+== WinChart
+
+* 新しいヒストグラム チャート タイプをサポートする多数の新しい操作が追加されました。
+== WinNavigationBar
+
+** 新たに追加された WinNavigationBar コントロールをサポートする新しいコントロール プロキシが追加されました。

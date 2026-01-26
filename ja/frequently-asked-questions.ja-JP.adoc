@@ -1,0 +1,49 @@
+﻿////
+
+|metadata|
+{
+    "name": "frequently-asked-questions",
+    "controlName": [],
+    "tags": [],
+    "guid": "{A9544DC6-DEA0-4634-A1A1-C685B77F0A9F}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= よくある質問
+
+{ProductName} (Rational Functional Tester) 製品についてよくある質問の回答と、Ultimate UI for Windows Forms 製品でどのように機能するかを説明します。
+
+== {ProductVersion} で機能する Ultimate UI for Windows Forms のバージョンを教えてください。
+
+現在、{ProductName} (Rational Functional Tester) の各ボリューム リリースは、Ultimate UI for Windows Forms の対応するリリースに直接マップされます。したがって、{ProductVersion} (CLR 4.0) の動作は、Ultimate UI for Windows Forms {ProductVersion} (CLR 4.0) のみでサポートされます。
+
+== {ProductVersion} がサポートする IBM Rational Functional Tester のバージョンを教えてください。
+
+{ProductVersion} (CLR 4.0) は、Rational Functional Tester V8.1.1.3 およびそれ以降をサポートしています。
+
+== Ultimate UI for Windows Forms ホット フィックスを適用した場合、既存の Forms Test Automation for IBM (Rational Functional Tester) の機能を壊すことはありませんか？
+
+いいえ、{ProductName} (Rational Functional Tester) は、適用された ホット フィックスとは関係なく機能します。
+
+== 保存した Rational Functional Tester のテストは、{ProductName} (Rational Functional Tester) の新しいバージョンで機能しますか？
+
+はい、{ProductName} (Rational Functional Tester) の各バージョンは下位互換性があります。追加機能のサポートのために下位互換性が維持できなくなった場合は、変更を文書で公開します。
+
+== {ProductName} (Rational Functional Tester) の複数のバージョンを実行する方法を教えてください。
+
+{ProductName} (Rational Functional Tester) バージョン ユーティリティを使用すると、複数のバージョンの製品を実行することができます。
+
+== テスト スクリプトの操作が「Click(AtPoint( x,y)」 (x と y はクリックされたポイントの座標) として記録されるのはなぜですか？
+
+{ProductName} (Rational Functional Tester) のインストールに問題があります。これは通常、必要なアセンブリおよび構成ファイルが正しいフォルダーに存在しない、または Rational Functional Tester でロードされていないことを意味します。{ProductName} (Rational Functional Tester) のアセンブリと構成ファイルが Customization folder of Rational Functional Tester 内に置かれていることを確認してください。次に Rational Functional Tester アセンブリ (rtxFtNet.dll) を参照する任意のプロセスを再起動してください。
+
+== {ProductName} (Rational Functional Tester) は、Ultimate UI for Windows Forms コントロールから継承する (またはサブクラス化した) 要素で記録と再生をサポートしていますか？
+
+はい、{ProductName} (Rational Functional Tester) は、サブクラス化した Ultimate UI for Windows Forms コントロールで操作を記録、再生します。Ultimate UI for Windows Forms コントロールから継承されたすべての操作が記録されます。ただし、Ultimate UI for Windows Forms のカスタマイズにより追加された新しいイベント / 操作は記録されません (フィールドを取得する新しいイベントを強制するスクリプトを追加することができます)。
+
+== Common Language Runtime (CLR) の異なるバージョンで実行中のテスト アプリケーションを切り替える方法を教えてください。
+
+Windows Forms Test Automation の link:using-the-version-utility.html[バージョン ユーティリティ] を使用し、{ProductName} (Rational Functional Tester) の CLR バージョン間を切り替えることができます。

@@ -1,0 +1,37 @@
+﻿////
+
+|metadata|
+{
+    "name": "users-guide",
+    "controlName": [],
+    "tags": [],
+    "guid": "{9D78917F-CBBD-4A9B-84B6-BD2DF4AEC849}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= User's Guide
+
+The User's Guide is exactly what the title states -- a guide for you, the user. This section of the help contains important information about the {ProductName} (Rational Functional Tester) product. The links below provide you with access to the key section of the User's Guide.
+
+== link:introduction.html[Introduction]
+
+Use this section to get a general overview of {ProductName} (Rational Functional Tester). You'll also find a topic with answers to frequently asked questions, as well as a topic on known issues that we want you to be aware of.
+
+== link:rft-whats-new.html[What's New]
+
+With each volume release, we continue to add new features to our already feature-rich application. This is a great place to find a list of new features that have been added or enhanced in this volume release, as well as previous releases.
+
+== link:getting-started.html[Getting Started]
+
+This is a good starting point for any first-time user of {ProductName} (Rational Functional Tester). Here, you'll find information on the prerequisites for the product, as well as how to set up the product so you can get to work.
+
+== link:using-windows-forms-test-automation.html[Using {ProductName} (Rational Functional Tester)]
+
+This section is important because it provides topics on how to use {ProductName} (Rational Functional Tester); for example, how to create and run tests. It also has information on using verification points and data-driven actions.
+
+== link:test-automation-for-infragistics-controls.html[Test Automation for Infragistics Controls]
+
+The information you need about Test Automation for IBM ( _Rational Functional Tester_  ) of the Infragistics® Windows Forms controls is covered in this topic.

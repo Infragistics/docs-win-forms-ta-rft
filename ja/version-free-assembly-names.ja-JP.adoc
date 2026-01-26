@@ -1,0 +1,23 @@
+﻿////
+
+|metadata|
+{
+    "name": "version-free-assembly-names",
+    "controlName": [],
+    "tags": [],
+    "guid": "b1a5bc0c-44a9-4912-8a1b-7a578260d1ca",  
+    "buildFlags": [],
+    "createdOn": "2010-11-08T16:13:23.7446225Z"
+}
+|metadata|
+////
+
+= バージョンフリー アセンブリ名
+
+バージョンフリーの名前が付いたアセンブリには、末尾にバージョン ナンバーがないため、CLR は名前で識別します。たとえば、「Infragistics2.RFT.Shared.v10.3.dll」は、「Infragistics.RFT.Shared.dll」になります。
+
+Test Automation RFT バージョンフリーの名前が付いたアセンブリは、Ultimate UI for Windows Forms のバージョンフリーの名前が付いたアセンブリ (Infragistics.Win.dll など) と互換性があります。これらのアセンブリは、Infragistics のバージョンフリー名のアセンブリを使用して構築されたアプリケーションをテストする場合に必要です。
+
+Test Automation アセンブリは対応する Infragistics アセンブリを参照します。バージョンフリーの Infragistics アセンブリは名前が異なるため、バージョンフリー Test Automation アセンブリの新しいセットが必要です。
+
+バージョン ユーティリティ ツールを使用して、アセンブリをバージョンフリー ビルド バージョンに切り替えることができます。バージョン ユーティリティの詳細は、 link:using-the-version-utility.html[バージョン ユーティリティの使用]のトピックを参照してください。

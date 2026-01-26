@@ -1,0 +1,639 @@
+﻿////
+
+|metadata|
+{
+    "name": "supported-data-verification-points",
+    "controlName": [],
+    "tags": [],
+    "guid": "{5BD03A83-C782-4391-B6CF-ABE8CD9BFF65}",  
+    "buildFlags": [],
+    "createdOn": "2007-11-05T10:10:32Z"
+}
+|metadata|
+////
+
+= Supported Data Verification Points
+
+You can use data verification points to test control data in a tested application. When you create a verification point, a snapshot of the verified data is stored. Then, during the replay session of the verification point, the data in the control is compared to the saved snapshot to see if any changes occurred. This way, you can identify potential errors in the application.
+
+When using data verification points, you can use both literal values and data-driven values retrieved from the test data pool.
+
+.Note
+[NOTE]
+====
+For more information on working with verification points through IBM Rational Functional Tester, see the IBM Rational Software Development Platform Help (User Guide > Recording > Verification Points) installed with Rational Functional Tester.
+====
+
+The following table lists the supported data verification points for Infragistics' Ultimate UI for Windows Forms controls and components.
+
+[options="header", cols="a,a"]
+|====
+|Control/Component Name|Supported Data Verification Point
+
+|WinActivityIndicator
+|
+* Item Properties 
+
+|WinButton
+|
+* Text 
+
+|WinCalculator
+|
+* Text 
+
+* Item Properties 
+
+|WinCalculatorDropDown
+|
+* Text 
+
+* Item Properties 
+
+|WinCalendarCombo
+|
+* Text 
+
+* Item Properties 
+
+|WinCarousel
+|
+* Carousel Item properties 
+
+|WinChart
+|
+* AllData 
+
+* Item Properties 
+
+|WinCheckEditor
+|
+* Text 
+
+* Item Properties 
+
+* Checked 
+
+* CheckedState (this is for tri state) 
+
+|WinColorPicker
+|
+* Text 
+
+* Item Properties 
+
+|WinComboEditor
+|
+* Elements State 
+
+* Text 
+
+* Item Properties 
+
+* List Elements 
+
+* Selected List Element 
+
+|WinComboBox
+|
+* AllData 
+
+* All Band Data 
+
+* Current Active Row 
+
+* Current Active Cell 
+
+* Table Contents Filtered in Data (AllBands) 
+
+* Filtered in Band Data 
+
+* Table Contents Filtered Out Data (AllBands) 
+
+* Filtered Out Band Data 
+
+* Selected Rows 
+
+* Selected Cells 
+
+|WinCurrencyEditor
+|
+* Text 
+
+* Item Properties 
+
+|WinDateTimeEditor
+|
+* Text 
+
+* Item Properties 
+
+|WinDayView
+|
+* Item Properties 
+
+* Active Day 
+
+* Active Owner 
+
+* Appointments 
+
+* Holidays 
+
+* Notes 
+
+* Owners 
+
+* Selected Appointments 
+
+* Selected Days 
+
+* Selected Holidays 
+
+* Selected TimeSlots 
+
+|WinDesktopAlert
+|
+* Text 
+
+* Item Properties 
+
+* Footer Text 
+
+* Caption 
+
+* Buttons 
+
+|WinDropDown
+|
+* AllData 
+
+* All Band Data 
+
+* Current Active Row 
+
+* Current Active Cell 
+
+* Table Contents Filtered in Data (AllBands) 
+
+* Filtered in Band Data 
+
+* Table Contents Filtered Out Data (AllBands) 
+
+* Filtered Out Band Data 
+
+* Selected Rows 
+
+* Selected Cells 
+
+|WinDropDownButton
+|
+* Text 
+
+* IsDroppedDown (whether or not the drop-down area is exposed) 
+
+* Item Properties 
+
+|WinExpandableGroupBox
+|
+* Text 
+
+* Expanded (whether or not the drop-down area is exposed) 
+
+* ItemProperties 
+
+|WinExplorerBar
+|
+* AllData 
+
+* Item Properties 
+
+* Selected Group Hierarchy 
+
+* Selected Group Text 
+
+|WinFontNameEditor
+|
+* Text 
+
+* Item Properties 
+
+* List Elements 
+
+* Selected List Element 
+
+|WinFormManager
+|
+* FormStyleSettings 
+
+* Item Properties 
+
+* Text 
+
+|WinGanttView
+|
+* Item Properties 
+
+* Active Cell Properties 
+
+* Active Cell Column 
+
+* All Data 
+
+* Active Row 
+
+* GanttView Owners 
+
+* GanttView Tasks 
+
+* GanttView Active Task 
+
+* GanttView Active Project 
+
+|WinGauge
+|
+* Item Properties 
+
+* Marker Values 
+
+* Marker Values Table 
+
+|WinGrid
+|
+* AllData 
+
+* All Band Data 
+
+* Current Active Row 
+
+* Current Active Cell 
+
+* Table Contents Filtered in Data (AllBands) 
+
+* Filtered in Band Data 
+
+* Table Contents Filtered Out Data (AllBands) 
+
+* Filtered Out Band Data 
+
+* Selected Rows 
+
+* Selected Cells 
+
+|WinGridCellProxy
+|
+* Text 
+
+* Item Properties 
+
+|WinGroupBox
+|
+* Text 
+
+* Item Properties 
+
+|WinLabel
+|
+* Text 
+
+* Item Properties 
+
+|WinListBar
+|
+* AllData 
+
+* Item Properties 
+
+* Selected Group Hierarchy 
+
+* Selected Group Text 
+
+|WinListView
+|
+* Selected Items 
+
+* Item Properties 
+
+|WinLiveTileView
+|
+* Tiles 
+
+* Tile groups 
+
+|WinMessageBoxManager
+|
+* Item Properties 
+
+|WinMonthViewMulti
+|
+* Item Properties 
+
+* Active Day 
+
+* Appointments 
+
+* Holidays 
+
+* Notes 
+
+* Owners 
+
+* Selected Days 
+
+|WinMonthViewSingle
+|
+* Item Properties 
+
+* Active Owner 
+
+* Appointments 
+
+* Holidays 
+
+* Notes 
+
+* Owners 
+
+* Selected Days 
+
+|WinNavigationBar
+|
+* Item Properties 
+
+* Locations 
+
+* Text 
+
+|WinNumericEditor
+|
+* Text 
+
+* Item Properties 
+
+|WinOptionSet
+|
+* Text 
+
+* Item Properties 
+
+|WinPanel
+|
+* Text 
+
+* Item Properties 
+
+|WinPictureBox 
+|
+* Text 
+
+* Item Properties 
+
+|WinPivotGrid
+|
+* Columns 
+
+* Column headers 
+
+* Rows 
+
+* Rows headers 
+
+* Table content 
+
+* Measures 
+
+* Filters 
+
+* Current active cell 
+
+|WinRadialMenu
+|
+* RadialMenu properties (CenterTool, MenuSettings, ToolSettings) 
+
+* RadialMenu Tools (Visible in current view) 
+
+|WinScrollBar
+|
+* Value 
+
+* Maximum 
+
+* Minimum 
+
+|WinSplitter
+|
+* Item Properties 
+
+|WinStatusBar
+|
+* Text 
+
+* Item Properties 
+
+|WinTabStripControl
+|
+* Text 
+
+* FirstVisibleIndex 
+
+* TabCount 
+
+* Item Properties 
+
+|WinTabControl
+|
+* Text 
+
+* FirstVisibleIndex 
+
+* TabCount 
+
+* Item Properties 
+
+|WinTabbedMdiControl
+|
+* Text 
+
+* Item Properties 
+
+|WinTextEditor
+|
+* Text 
+
+* Item Properties 
+
+* Selected Text 
+
+|WinTilePanel
+|
+* Item Properties 
+
+* Text 
+
+* Tiles 
+
+|WinTimelineView
+|
+* Active Owner 
+
+* Appointments 
+
+* Appointments In View 
+
+* Holidays 
+
+* Item Properties 
+
+* Owners 
+
+* Owners In View 
+
+* Selected Appointments 
+
+* Selected Holidays 
+
+* Selected Range 
+
+* Timeline Intervals 
+
+* Visible Range 
+
+|WinTimeSpanEditor
+|
+* Text 
+
+* Item Properties 
+
+* Selected Text 
+
+|WinTimeZoneEditor
+|
+* Text 
+
+* Item Properties 
+
+* List Elements 
+
+* Selected List Element 
+
+|WinToolbarsManager
+|Ribbon: 
+
+* Ribbon Application Menu 
+
+* Ribbon Application Menu 2010 
+
+* Ribbon Hierarchy 
+
+* Ribbon Items Properties 
+
+* Ribbon QuickAccess Toolbar 
+
+* Ribbon Tab item Toolbar 
+
+Toolbar: 
+
+* Item Hierarchy 
+
+* Item Properties 
+
+ButtonTool and LabelTool: 
+
+* Text 
+
+* Tooltip Text 
+
+PopupTool 
+
+* Item Hierarchy 
+
+* ItemProperties 
+
+* Text 
+
+* Tooltip Text 
+
+ComboTool, FontListTool 
+
+* Item Properties 
+
+* Text 
+
+* Tooltip Text 
+
+* List Element 
+
+* Selected List Element 
+
+TextBoxTool 
+
+* Item Properties 
+
+* Text 
+
+* Tooltip Text 
+
+* Selected Test 
+
+MaskedEditTool 
+
+* Item Properties 
+
+* Text 
+
+* Tooltip Text 
+
+Navigation ToolBar 
+
+* Current Navigation Location 
+
+* Navigation Locations 
+
+|WinTrackbar
+|
+* Value 
+
+* Minimum 
+
+* Maximum 
+
+|WinTree
+|
+* Item Properties 
+
+* All Data 
+
+* Selected Node Cells 
+
+* Selected Node Hierarchy 
+
+* Selected Node Text 
+
+* Ribbon Customization Data 
+
+|WinWeekView
+|
+* Item Properties 
+
+* Active Day 
+
+* Active Owner 
+
+* Appointments 
+
+* Holidays 
+
+* Notes 
+
+* Owners 
+
+* Selected Appointments 
+
+* Selected Days 
+
+* Selected Holidays 
+
+* Selected Notes 
+
+|====
+

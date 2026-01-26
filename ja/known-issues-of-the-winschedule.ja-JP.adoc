@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "known-issues-of-the-winschedule",
+    "controlName": [],
+    "tags": [],
+    "guid": "{B2515CA6-8834-44E4-A63E-D7BEF30BF0B9}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= WinSchedule の既知の問題
+
+このトピックでは、開発サイクル中に確認された WinSchedule コントロールの既知の問題を説明します。
+
+== 予定のドラッグ
+
+宛先へのパスにコントロールのスクロールが含まれる場合の予定または休日のドラッグでは、Drag アクションを MoveAppointment アクションに置き換える必要があります。これは、ドラッグ操作のグラス再生をさせないコントロール動作のために必要です。

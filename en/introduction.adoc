@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "introduction",
+    "controlName": [],
+    "tags": [],
+    "guid": "{70C665E2-9EBB-4C49-9225-8CF64BFE1570}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Introduction
+
+To answer your high-level questions about the {ProductName} (Rational Functional Tester) product (e.g., What can it do for me? Are there any issues that I need to know about?), click the links below.
+
+* link:welcome-to-testadvantage-for-windows-forms-(-for-ibm-rational-functional-tester-).html[Welcome to {ProductName} (Rational Functional Tester)]
+* link:frequently-asked-questions.html[Frequently Asked Questions]
+* link:known-issues.html[Known Issues and Limitations]

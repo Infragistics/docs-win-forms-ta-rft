@@ -1,0 +1,39 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2009-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "{E4BC9CC8-CACA-47F7-8808-05DC555474C1}",  
+    "buildFlags": [],
+    "createdOn": "2009-05-03T11:04:21Z"
+}
+|metadata|
+////
+
+= What's New in 2009 Volume 1
+
+The {ProductName} (Rational Functional Tester) 2009 Volume 1 release includes improved support for the following Ultimate UI for Windows Forms controls.
+
+== WinGrid™
+
+* We have added support for the excel style filtering feature of WinGrid.
+* We have added support for the new that provides the ability to add a checkbox to a WinGrid Column header
+* We have added support for Groups in RowLayout
+
+== WinSchedule™
+
+* We have added support for appointment dragging. We have also added resizing enhancements.
+
+== WinCombo™
+
+* We have added support for the new feature of the WinCombo control where you can now select multiple items.
+
+== WinComboEditor™
+
+* We have added support for the new feature of the WinComboEditor control where you can now select multiple items.
+
+== WinPanel™
+
+* We have added support for the new WinPanel control

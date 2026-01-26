@@ -1,0 +1,25 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2007-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "{5BA85C38-A1CC-4D4B-82D9-692C0F7F68E9}",  
+    "buildFlags": [],
+    "createdOn": "2008-12-05T13:31:46Z"
+}
+|metadata|
+////
+
+= 2007 Volume 2 の新機能
+
+{ProductName} (Rational Functional Tester) 2007 Volume 2 リリースでは、以下の Ultimate UI for Windows Forms コントロールおよびコンポーネントのサポートが改善されています。
+
+== WinDesktopAlertWindow
+
+* WinDesktopAlertWindow コントロールのサポートが追加されました。
+
+== WinGauge
+
+* WinGauge コントロールのサポートが追加されました。

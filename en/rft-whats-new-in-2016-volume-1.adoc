@@ -1,0 +1,59 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2016-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "3a8add1a-0424-4751-b204-41f398f65210",  
+    "buildFlags": [],
+    "createdOn": "2016-04-12T19:16:39.9273376Z"
+}
+|metadata|
+////
+
+= What's New in 2016 Volume 1
+
+== Topic Overview
+
+=== Purpose
+
+This topic presents the new controls and the enhanced features for the Infragistics® Windows Forms 2016 Volume 1 release.
+
+== What’s New Summary
+
+=== What’s new summary chart
+
+The following table summarizes what’s new in 2016 Volume 1. Additional details follow the summary table.
+
+==== UltraGrid
+
+[options="header", cols="a,a"]
+|====
+|Feature|Description
+
+|Expand/Collapse Child Bands
+|UltraGrid child bands can now be collapsed, and this functionality is accessible through record/replay. 
+
+image::images/Collapsible_Child_Bands_1.png[]
+
+|Expand/Collapse Column Groups
+|UltraGrid column groups can now be collapsed, and this functionality is accessible through record/replay. 
+
+image::images/Collapsible_Columns_1.png[] 
+
+image::images/Collapsible_Columns_2.png[]
+
+|====
+
+[[_Ref382587568]]
+
+=== Right-to-Left support
+
+This feature supports all mouse interactions on the controls listed below for Right-to-Left and Left-to-Right.
+
+==== Supported controls:
+
+* _WinTab_
+
+* _WinTabStrip_

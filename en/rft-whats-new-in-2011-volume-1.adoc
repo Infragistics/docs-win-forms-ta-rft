@@ -1,0 +1,40 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2011-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "710e1f42-5153-4226-bf62-2155269180a0",  
+    "buildFlags": [],
+    "createdOn": "2011-05-11T20:31:00.1571811Z"
+}
+|metadata|
+////
+
+= What's New in 2011 Volume 1
+
+The {ProductName} (Rational Functional Tester) 2011.1 release includes automated testing support for the new Ribbon Customization feature added to the WinToolbarsManager™ component.
+
+== WinToolbarsManager
+
+The UltraTreeProxy has changed to support your automated testing of the Ribbon Customization functionality.
+
+The following new sub-items are added to the tree that appears on the right side of the customization dialog:
+
+* AtLocation (“GrabHandle”)
+* AtLocation (“NewGroup”)
+* AtLocation (“Modify”)
+* AtLocation (“Remove”)
+* AtLocation (“Hide”)
+* AtLocation (“Show”)
+
+A new verification point – Ribbon Customization Data – is added. This is a tree test data structure that represents the nodes in the Ribbon layout tree on the customization dialog. The new verification point is only available for the tree control that is displayed on the right hand-side of the ribbon customization control.
+
+Each node has the following properties:
+
+* CanBeModified
+* IsStockItem
+* RibbonItemNodeType
+* Visible
+* data

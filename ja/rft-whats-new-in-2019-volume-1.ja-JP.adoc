@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2019-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "288499ef-9843-4e68-b97b-83f282613cfc",  
+    "buildFlags": [],
+    "createdOn": "2019-1-24T12:59:31.2423494Z"
+}
+|metadata|
+////
+
+= 2019 Volume 1 の新機能
+
+== Infragistics Windows Forms 2019 Volume 1 のサポート
+
+=== すべての Windows Forms コントロール
+
+Windows Forms Test Automation for IBM (Rational Functional Tester) 2019 volume 1 リリースでは、Infragistics Windows Forms 2019 Volume 1 コントロールのスイート全体のテスト機能をサポートしています。

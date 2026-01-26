@@ -1,0 +1,91 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2013-volume-1",
+    "controlName": [],
+    "tags": [],
+    "guid": "ae4122b2-7740-4d3a-97ba-a54bdac63e43",  
+    "buildFlags": [],
+    "createdOn": "2013-03-21T19:09:55.2909194Z"
+}
+|metadata|
+////
+
+= 2013 Volume 1 の新機能
+
+== Ultimate UI for Windows Forms 2013 Volume 1 のサポート
+
+=== Windows Forms のすべてのコントロール
+
+Ultimate UI for Windows Forms 2013 Volume 1 では、Windows Forms のすべてのコントロールが {ProductName} (Rational Functional Tester) バージョン 8.1 でサポートされています。
+
+== _UltraDayView_   コントロール プロキシ
+
+=== Click to Add 機能
+
+「 *Click To Add* 」機能がサブ項目として  _UltraDayView_   コントロール プロキシに追加されています。これにより日単位の表示のボタンをクリックすると、予定の追加操作が記録できます。
+
+時間帯の [ *Click to Add* ] ボタンをクリックすると、以下のように操作が記録されます。
+
+[source,csharp]
+----
+UltraDayView1Calendar().Click(AtList( _
+AtLocation("AddAppointment"), _
+       AtLocation("TimeSlot"), _
+       AtPosition(34), AtDate( _
+       12, 26, 2012)))
+----
+
+`AllDayEventArea` の[ *Click to Add* ] ボタンをクリックすると、以下のように操作が記録されます。
+
+[source,csharp]
+----
+UltraDayView1Calendar().Click(AtList( _
+AtLocation("AddAppointment"), _
+AtLocation("AllDayAppointmentArea "), _
+AtDate( _
+12, 26, 2012)))
+----
+
+=== AllDayEvent 領域スクロールバー
+
+日単位の表示のスクロールバーに加え、 _UltraDayView_   コントロールでは、`AllDayEventAreaScrolling` プロパティを使用して `AllDayEvent` 領域にスクロールバーを表示できます。
+
+2 つのスクロールバーを表示するように設定した場合、`AllDayEvent` スクロールバーでの操作は、時間帯領域スクロールバーとは別に `AllDayEvent` 領域に対する特別な操作として記録されます。
+
+*C# の場合:*
+
+[source,csharp]
+----
+UltraDayView1Calendar().Click(AtLocation("AllDay_SCROLL_DOWNBUTTON"))
+UltraDayView1Calendar().Click(AtLocation("AllDay_SCROLL_DOWN"))
+UltraDayView1Calendar().Click(AtLocation("AllDay_SCROLL_UPBUTTON"))
+UltraDayView1Calendar().Click(AtLocation("AllDay_SCROLL_UP"))
+UltraDayView1Calendar().Click(AtLocation("AllDay_SCROLL_VERTICAL_ELEVATOR"))
+----
+
+以下のスクリーンショットに、時間帯領域スクロールバーとは別の `AllDayEvent` 領域スクロールバーの概観を示します。
+
+image::images/What's_New_in_2013_Volume_1.png[]
+
+== _UltraGanttView_   コントロール プロキシ
+
+=== 新しいプロパティ
+
+以下のプロパティが  _UltraGanttView_   コントロール プロキシに追加されました。
+
+[options="header", cols="a,a"]
+|====
+|プロパティ|説明
+
+|`Active Cell プロパティ`
+|アクティブ セルのプロパティ確認
+
+|`Active Cell Column`
+|アクティブ セルの列のプロパティ確認
+
+|`AllData`
+|表示可能なすべての行と列を持つコントロールのグリッド表示（フラットバンドとして）確認
+
+|====

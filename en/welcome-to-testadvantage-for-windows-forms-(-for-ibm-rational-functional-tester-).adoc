@@ -1,0 +1,21 @@
+﻿////
+
+|metadata|
+{
+    "name": "welcome-to-testadvantage-for-windows-forms-(-for-ibm-rational-functional-tester-)",
+    "controlName": [],
+    "tags": [],
+    "guid": "{17968647-0115-4414-B25E-6F8B63B60652}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Welcome to {ProductName} (Rational Functional Tester)
+
+The first product of its kind, {ProductName} (Rational Functional Tester) is a collection of custom proxies built using IBM Rational Functional Tester. {ProductName} (Rational Functional Tester) enables automated testing of the presentation layer, allowing developers to fully regression test Windows Forms applications with user interfaces developed using Infragistics product.
+
+With these proxy libraries, testing applications built with Infragistics controls will have all of the valuable features that Rational Functional Tester provides for standard Microsoft controls; for example, data verification points, data-driven support, and quick and easy way to identify sub-items. The tester can easily record and replay actions through more readable and maintainable script commands in either VB.NET or Java. Fast and reliable playback enables more test scripts to run in a given amount of time, which enables better test coverage of applications and ultimately higher quality software.
+
+image::images/Welcome_to_Windows_Forms_Test_Automation_for_IBM(RFT).png[Default image of TestAdvantage]

@@ -1,0 +1,22 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2008-volume-3",
+    "controlName": [],
+    "tags": [],
+    "guid": "{35DDE52B-17DF-452B-A16F-918B3685865F}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= 2008 Volume 3 の新機能
+
+{ProductName} (Rational Functional Tester) 2008 Volume 3 リリースではあらゆるテストが行われ、Ultimate UI for Windows Forms 2008 Volume 3 リリースとの完全な互換性が保証されています。
+
+== WinChart
+
+* 新しい TreeMap チャート タイプをサポートする多数の新しい操作が追加されました。
+* スクロール スケール機能のサポートも追加されました。

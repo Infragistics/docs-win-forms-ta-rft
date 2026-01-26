@@ -1,0 +1,40 @@
+﻿////
+
+|metadata|
+{
+    "name": "recording-a-test",
+    "controlName": [],
+    "tags": [],
+    "guid": "{71D0B23A-4812-4AB0-879F-7F80E30532A6}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Recording a Test
+
+After you are finished link:creating-a-test.html[creating a Functional Test project], you can now record a script.
+
+*To record a test:*
+
+[start=1]
+. In the Functional Test toolbar, click the Record a Functional TestScript button.
+[start=2]
+. Select an existing Functional Test project.
+[start=3]
+. In the Script Name field, type a name for the script you are about to record.
+[start=4]
+. Click Finish.
+[start=5]
+. The Functional Test window minimizes, and the Functional Test Recording Monitor appears. The Recording Monitor displays messages for actions that are performed during your recording session. (e.g., starting and pausing the recording, clicking, and inserting verification points).
+[start=6]
+. If you want to change the appearance of the text that is displayed in the monitor, click the Monitor Message Preferences button on the toolbar.
+[start=7]
+. If you want to perform script commands (e.g., call another script, insert a delay, insert a log entry), click the Insert Script Support Commands button on the toolbar.
+[start=8]
+. Click Close.
+
+== Related Topic
+
+link:replayng-a-test.html[Replaying a Test]

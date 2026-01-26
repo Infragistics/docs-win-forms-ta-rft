@@ -1,0 +1,82 @@
+﻿////
+
+|metadata|
+{
+    "name": "proxies-with-data-driven-capabilities",
+    "controlName": [],
+    "tags": [],
+    "guid": "{3832136A-BF6C-4F11-836F-CB4CC1FFD97B}",  
+    "buildFlags": [],
+    "createdOn": "2007-11-05T10:11:43Z"
+}
+|metadata|
+////
+
+= Proxies with Data-Driven Capabilities
+
+There are many proxies in the {ProductName} (Rational Functional Tester) product that support data-driven tests. With data-driven tests, you can separate test scripts from the test data. To do this, you need to parameterize the test script to use data stored in an external file (the datapool) using data-driven tests. This gives you the ability to share test data between different scripts. You can also change the test data by simply updating the datapool file without having to updating the test script.
+
+.Note
+[NOTE]
+====
+For more information on working with data-driven tests through IBM Rational Functional Tester, see the IBM Rational Software Development Platform Help (User Guide > Data-Driven Tests) installed with Rational Functional Tester.
+====
+
+The following table lists the {ProductName} (Rational Functional Tester) proxies that have data-driven capabilities.
+
+[options="header", cols="a,a"]
+|====
+|Proxy|Used by
+
+|EditorToolUIElementProxy
+|
+* TextBoxTool 
+
+* ComboBoxTool 
+
+* FontListTool 
+
+|EmbeddableTextboxWithUIPermissionsProxy
+|
+* UltraGrid cells 
+
+* UltraCombo editor area 
+
+|UltraComboEditorProxy
+|
+* UltraComboEditor 
+
+|UltraCurrencyEditorProxy
+|
+* UltraCurrencyEditor 
+
+|UltraDateTimeEditorProxy
+|
+* UltraDateTimeEditor 
+
+|UltraFontNameEditorProxy
+|
+* UltraFontNameEditor 
+
+|UltraGridCellProxyProxy
+|
+* UltraGridCellProxy 
+
+|UltraNumericEditorProxy
+|
+* UltraNumericEditor 
+
+|UltraTextEditorProxy
+|
+* UltraTextEditor 
+
+|UltraTimeSpanEditorProxy
+|
+* UltraTimeSpanEditor 
+
+|UltraTimeZoneEditorProxy
+|
+* UltraTimeZoneEditor 
+
+|====
+

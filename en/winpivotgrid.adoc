@@ -1,0 +1,30 @@
+﻿////
+
+|metadata|
+{
+    "name": "winpivotgrid",
+    "controlName": [],
+    "tags": [],
+    "guid": "ff05329d-5508-4782-a101-507e2352ee7f",  
+    "buildFlags": [],
+    "createdOn": "2014-04-10T21:12:08.2403862Z"
+}
+|metadata|
+////
+
+= WinPivotGrid
+
+=== Introduction
+
+This topic explains sub items, independent verification points and the behavior of the  _WinPivotGrid_™ control proxy represented by the link:infragistics.rft.nettestobjects~infragistics.rft.nettestobjects.ultrapivotgridtestobject.html[UltraPivotGridTestObject] object.
+
+=== Topics
+
+[options="header", cols="a,a"]
+|====
+|Topic|Purpose
+
+| link:winpivotgrid-using-pivotgrid-control-proxy.html[Using PivotGrid Control Proxy]
+|This topic provides an overview about recording and replaying actions, with corresponding sub items and behaviors of the _WinPivotGrid_ control proxy represented by `UltraPivotGridTestobject` object.
+
+|====

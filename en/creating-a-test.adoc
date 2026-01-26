@@ -1,0 +1,32 @@
+﻿////
+
+|metadata|
+{
+    "name": "creating-a-test",
+    "controlName": [],
+    "tags": [],
+    "guid": "{804CBC6A-8FC3-42C9-8C36-23AB5EF5F036}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Creating a Test
+
+Before you can start recording a test, you need to create a Functional Test project.
+
+*To create a Functional Test project:*
+
+[start=1]
+. On the Functional Test menu, click File, point to New, and select Functional Test Project.
+[start=2]
+. In the Project Name field, type a name for your project. (Do not use any spaces.)
+[start=3]
+. In the Project Location field, type the directory path in which you want Functional Test to create a directory that will contain the test.
+[start=4]
+. Click Finish.
+
+== Related Topic
+
+link:recording-a-test.html[Recording a Test]

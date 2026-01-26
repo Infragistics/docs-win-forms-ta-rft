@@ -1,0 +1,25 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new",
+    "controlName": [],
+    "tags": [],
+    "guid": "{60A30352-C007-4F68-8D58-2C02F212B57E}",  
+    "buildFlags": [],
+    "createdOn": "2008-12-05T13:31:20Z"
+}
+|metadata|
+////
+
+= 新機能
+
+link:rft-whats-new-in-2019-volume-1.html[2019 Volume 1 の新機能]
+
+{ProductName} Rational Functional Tester の今回のボリューム リリースでサポートされる、新しい Ultimate UI for Windows Forms コントロールおよびコンポーネントを確認できます。
+
+link:rft-whats-new-revision-history.html[改訂履歴]
+
+{ProductName} Rational Functional Tester に追加された特定の機能について、またはその機能が追加された時点を確認する場合:
+
+このセクションで、2019 Volume 1 リリース以降の新機能の履歴を簡単に確認できます。

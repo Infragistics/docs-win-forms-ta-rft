@@ -1,0 +1,20 @@
+﻿////
+
+|metadata|
+{
+    "name": "api-reference-guide",
+    "controlName": [],
+    "tags": [],
+    "guid": "{C2D0097D-B6DB-4801-B3E9-9C9F9A168E72}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= API Reference Guide
+
+The API Reference Guide offers a definitive listing of all the {ProductName} (Rational Functional Tester) classes and methods which are organized by assembly:
+
+* link:infragistics.rft.nettestobjects~infragistics.rft.nettestobjects_namespace.html[Infragistics.RFT.NetTestObjects]
+* link:infragistics.rft.nettestobjects~infragistics.rft.shared.recordtime_namespace.html[Infragistics.RFT.Shared.RecordTime]

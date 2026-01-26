@@ -1,0 +1,49 @@
+﻿////
+
+|metadata|
+{
+    "name": "whats-new-in-2015-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "0d9b4e46-0688-4047-a3af-b2245d0422df",  
+    "buildFlags": [],
+    "createdOn": "2015-09-24T22:13:29.2762505Z"
+}
+|metadata|
+////
+
+= What's New in 2015 Volume 2
+
+== Topic Overview
+
+=== Purpose
+
+This topic presents the controls and the new and enhanced features for the Infragistics® Windows Forms 2015 Volume 2 release.
+
+== What’s New Summary
+
+=== What’s new summary chart
+
+The following table summarizes what’s new in 2015 Volume 2. Additional details follow the summary table.
+
+==== UltraFormattedTextEditor & UltraFormattedLinkLabel
+
+[options="header", cols="a,a"]
+|====
+|Feature|Description
+
+|Using Subscript and Superscript
+|New to the FormattedTextEditor or FormattedLinkLabel controls.
+
+|====
+
+==== UltraToolbarsManager
+
+[options="header", cols="a,a"]
+|====
+|Feature|Description
+
+|NotificationBadge Properties
+|New NotificationBadges feature for the UltraToolbarsManager
+
+|====

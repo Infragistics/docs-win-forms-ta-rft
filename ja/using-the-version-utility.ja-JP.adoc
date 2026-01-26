@@ -1,0 +1,28 @@
+﻿////
+
+|metadata|
+{
+    "name": "using-the-version-utility",
+    "controlName": [],
+    "tags": [],
+    "guid": "{B7EAB01F-18D5-4008-B50E-E61F95EB6582}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= バージョン ユーティリティの使用
+
+{ProductName} (Rational Functional Tester) の各バージョンは、同じバージョンの Ultimate UI for Windows Forms とのみ連携できます。Ultimate UI for Windows Forms のバージョンを切り替えるたびに、Infragistics のバージョンと一致させるために RFT をロードする Test Automation のアクティブ バージョンを切り替える必要があります。
+
+{ProductName} (Rational Functional Tester) バージョン ユーティリティにより、現在のマシンにインストールされている {ProductName} (Rational Functional Tester) のバージョンを迅速に切り替え、Rational Functional Tester を そのバージョンの Ultimate UI for Windows Forms と連携させることができます。
+
+[NOTE]
+====
+*注:* アクティブなバージョンを変更する場合、Rational Functional Tester を再起動し、新しい設定を有効にする必要があります。
+====
+
+このユーティリティにより、{ProductName} (Rational Functional Tester) のすべてのバージョンを無効にして、{ProductName} (Rational Functional Tester) がシステムにインストールされていない状態と同じ状態で Rational Functional Tester を動作させることもできます。
+
+image::images/TA-RFTVersionUtil18.1.png[バージョン ユーティリティ]

@@ -1,0 +1,22 @@
+﻿////
+
+|metadata|
+{
+    "name": "using-windows-forms-test-automation",
+    "controlName": [],
+    "tags": [],
+    "guid": "{BD2B49A5-84DA-4257-9DA5-214F72AE0EDD}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= Using Windows Forms Test Automation
+
+Click the links below for information on using Windows Forms Test Automation to create, modify, save, and run tests. As well, you can find information on how to use verification points and data-driven actions for even more accurate testing.
+
+* link:creating-a-test.html[Creating a Test]
+* link:recording-a-test.html[Recording a Test]
+* link:replayng-a-test.html[Replaying a Test]
+* link:using-the-version-utility.html[Using the Version Utility]

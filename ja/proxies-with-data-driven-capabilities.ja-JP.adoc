@@ -1,0 +1,81 @@
+﻿////
+
+|metadata|
+{
+    "name": "proxies-with-data-driven-capabilities",
+    "controlName": [],
+    "tags": [],
+    "guid": "{3832136A-BF6C-4F11-836F-CB4CC1FFD97B}",  
+    "buildFlags": [],
+    "createdOn": "2007-11-05T10:11:43Z"
+}
+|metadata|
+////
+
+= データ駆動型機能を持つプロキシ
+
+データ駆動型テストをサポートする {ProductName} (Rational Functional Tester) 製品には、複数のプロキシがあります。データ駆動型テストでは、テスト データからテスト スクリプトを分離できます。そのためには、外部ファイル (データプール) に保存されたデータを使用するために、データ駆動型テストを使用してテスト スクリプトをパラメータ化する必要があります。これにより、異なるスクリプト間でテスト データが共有できます。またテスト スクリプトを更新せずに、データ プール ファイルのみを更新し、テスト データを変更することができます。
+
+[NOTE]
+====
+*注:*  IBM Rational Functional Tester を介したデータ駆動型テストでの作業の詳細は、Rational Functional Tester と一緒にインストールされる IBM Rational Software Development Platform ヘルプ (ユーザー ガイド > データ駆動型テスト) を参照してください。
+====
+
+以下の表に、データ駆動型機能を持つ {ProductName} (Rational Functional Tester) プロキシを示します。
+
+[options="header", cols="a,a"]
+|====
+|プロキシ|使用されるツールおよび領域
+
+|EditorToolUIElementProxy
+|
+* TextBoxTool 
+
+* ComboBoxTool 
+
+* FontListTool 
+
+|EmbeddableTextboxWithUIPermissionsProxy
+|
+* UltraGrid セル 
+
+* UltraCombo エディター領域 
+
+|UltraComboEditorProxy
+|
+* UltraComboEditor 
+
+|UltraCurrencyEditorProxy
+|
+* UltraCurrencyEditor 
+
+|UltraDateTimeEditorProxy
+|
+* UltraDateTimeEditor 
+
+|UltraFontNameEditorProxy
+|
+* UltraFontNameEditor 
+
+|UltraGridCellProxyProxy
+|
+* UltraGridCellProxy 
+
+|UltraNumericEditorProxy
+|
+* UltraNumericEditor 
+
+|UltraTextEditorProxy
+|
+* UltraTextEditor 
+
+|UltraTimeSpanEditorProxy
+|
+* UltraTimeSpanEditor 
+
+|UltraTimeZoneEditorProxy
+|
+* UltraTimeZoneEditor 
+
+|====
+

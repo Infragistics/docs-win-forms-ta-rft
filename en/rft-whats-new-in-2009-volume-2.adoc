@@ -1,0 +1,53 @@
+﻿////
+
+|metadata|
+{
+    "name": "rft-whats-new-in-2009-volume-2",
+    "controlName": [],
+    "tags": [],
+    "guid": "{6DEE43EC-6689-4871-94E6-DD63DAD0CF3A}",  
+    "buildFlags": [],
+    "createdOn": "0001-01-01T00:00:00Z"
+}
+|metadata|
+////
+
+= What's New in 2009 Volume 2
+
+The {ProductName} (Rational Functional Tester) 2009.2 release includes improved support for the following new Ultimate UI for Windows Forms controls.
+
+== WinTimelineView™
+
+To support your automated testing of the new WinTimelineView control that we have added to WinSchedule™, we give you the new UltraTimelineViewProxy. It supports sub items like AtLocation for clicking on the scrollbars, AtList when the user clicks on any TimeSlot, Appointment, Holiday, Owner Header, and Column Header and AtButton for clicks on the navigational buttons located at the additional time line column headers.
+
+In addition to our support of all regular verification points, the following verification points (many of which will be familiar to you from our other WinSchedule™ proxies) are supported by this new proxy:
+
+* Active Owner (when OwnerGroupingStyle is not merged)
+* Timeline Intervals (includes information about primary and additional intervals)
+* Appointments
+* Holidays
+* Owners
+* Selected Appointments
+* Selected Holidays
+* Selected Range (start and end date/time on the primary interval)
+* Visible Range (start and end date/time on the primary interval)
+
+UltraTimelineViewProxy supports the standard Click, DoubleClick, NClick and Drag actions.
+
+== WinTilePanel™
+
+We have created new proxies and test objects to support your automated testing of the new WinTilePanel container. One proxy is the UltraTilePanelProxy which represents the panel, and the second proxy is the UltraTileProxy which treats each individual tile as an independent control that you can test, record and replay actions from.
+
+====== UltraTilePanelProxy
+
+Our new tile panel proxy supports sub items that include AtLocation for clicks on the scrollbars, and AtPoint for clicks within the client area that are not covered by a tile. Standard Click, DoubleClick, NClick and Drag actions are supported. In addition to standard Item Properties and Text verification points, the UltraTilePanelProxy supports the Tiles verification point which is a table representing the tile panel’s child tiles and their important properties.
+
+====== UltraTileProxy
+
+The new tile proxy supports sub items including AtLocation(“Header”) for clicks upon the header caption area of the tile, AtButton for clicks of the state change and close buttons on the tile, and AtPoint for any other clicks in the client area of the tile (where the tile’s client area is bound to another control, any actions will be recorded off of that control.)
+
+In the standard Item Properties verification point, there will be a child node that lists the values of the TileSettings properties. UltraTileProxy also supports the Text verification property, and the standard Click, DoubleClick, NClick and Drag actions.
+
+== WinControlContainerEditor™
+
+We have added support for recording, replaying, and verification of the new ControlContainerEditor component through the control embedded inside it and the controls that are hosting it. (For example interacting with editors or buttons inside the control container will be recorded and replayed off of those editors and buttons).
