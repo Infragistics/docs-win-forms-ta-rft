@@ -1,0 +1,10 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "Infragistics WinForms TA RFT Docs",
+  "description": "Docs repository for Infragistics WinForms TestAdvantage RFT components.",
+  "folders": [],
+  "excludeFolders": [ "topics/ja" ],
+  "excludeFiles": [],
+  "rules": ["Use repository to get information on how to use Infragistics WinForms TestAdvantage RFT components."],
+  "previousVersions": []
+}
